@@ -27,15 +27,15 @@ export default function LocalExpertise() {
 
               <div className="pt-3 flex flex-wrap items-center gap-4">
                 <a
-                  href="tel:+918460209025"
+                  href="tel:+919997837133"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] hover:brightness-110 text-black rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md shadow-amber-500/20"
                 >
                   <Phone size={15} />
-                  <span>Call +91 8460209025</span>
+                  <span>Call +91 9997837133</span>
                 </a>
 
                 <a
-                  href="https://wa.me/918460209025?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20would%20like%20local%20property%20consultation%20in%20Bulandshahr."
+                  href="https://wa.me/919997837133?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20would%20like%20local%20property%20consultation%20in%20Bulandshahr."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 hover:border-amber-500/40 text-zinc-200 hover:text-[#F5C542] rounded-xl text-xs sm:text-sm font-semibold transition-all"
@@ -77,7 +77,7 @@ export default function LocalExpertise() {
 
               <div className="mt-6 pt-4 border-t border-white/10 text-xs text-zinc-400">
                 <span>Office: </span>
-                <span className="font-medium text-white">Near Bhoor Chauraha, Bulandshahr (U.P.)</span>
+                <span className="font-medium text-white">Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr (U.P.)</span>
               </div>
             </div>
           </div>

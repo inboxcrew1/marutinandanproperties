@@ -42,25 +42,25 @@ const newProjects = [
 
 export default function NewProjects() {
   return (
-    <section className="py-16 sm:py-24 bg-white border-y border-gray-100">
+    <section className="py-16 sm:py-24 bg-[#0B0B0E] border-y border-white/10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald bg-emerald/10 px-3 py-1 rounded-full mb-3">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#F5C542] bg-[#F5C542]/10 border border-[#F5C542]/20 px-3 py-1 rounded-full mb-3">
               <Sparkles size={13} />
               <span>Upcoming &amp; New Launches</span>
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-charcoal">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#F5C542]">
               Featured New Projects
             </h2>
-            <p className="text-gray-500 text-sm sm:text-base mt-2 max-w-xl">
+            <p className="text-zinc-400 text-sm sm:text-base mt-2 max-w-xl font-light">
               RERA-registered mega developments, planned residential townships, and commercial hubs directly from reputed builders.
             </p>
           </div>
 
           <Link
             href="/new-projects"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-emerald hover:text-emerald-dark transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#F5C542] hover:text-[#FFF0A8] transition-colors"
           >
             <span>View All New Projects</span>
             <ArrowRight size={16} />
@@ -71,47 +71,47 @@ export default function NewProjects() {
           {newProjects.map(proj => (
             <div
               key={proj.name}
-              className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-emerald/30 hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group"
+              className="bg-[#131317] rounded-2xl border border-white/10 overflow-hidden hover:border-[#F5C542]/40 hover:shadow-[0_8px_30px_rgba(245,197,66,0.12)] transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
-                <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
+                <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900">
                   <img
                     src={proj.image}
                     alt={proj.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-charcoal/90 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md shadow">
+                  <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md shadow border border-white/10">
                     {proj.status}
                   </div>
-                  <div className="absolute top-3 right-3 bg-emerald text-white text-[11px] font-semibold px-2.5 py-1 rounded-md shadow flex items-center gap-1">
+                  <div className="absolute top-3 right-3 bg-[#F5C542] text-zinc-950 font-bold text-[11px] px-2.5 py-1 rounded-md shadow flex items-center gap-1">
                     <ShieldCheck size={12} /> RERA Registered
                   </div>
                 </div>
 
                 <div className="p-5">
-                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">
+                  <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-1">
                     {proj.developer}
                   </span>
-                  <h3 className="font-display font-bold text-xl text-charcoal group-hover:text-emerald transition-colors mb-2">
+                  <h3 className="font-display font-bold text-xl text-white group-hover:text-[#F5C542] transition-colors mb-2">
                     {proj.name}
                   </h3>
-                  <div className="flex items-center gap-1.5 text-xs text-gray-500 mb-4">
-                    <MapPin size={13} className="text-emerald flex-shrink-0" />
+                  <div className="flex items-center gap-1.5 text-xs text-zinc-400 mb-4">
+                    <MapPin size={13} className="text-[#F5C542] flex-shrink-0" />
                     <span>{proj.location}</span>
                   </div>
 
-                  <div className="p-3 bg-gray-50 rounded-xl space-y-1.5 text-xs mb-4">
+                  <div className="p-3 bg-[#18181F] rounded-xl space-y-1.5 text-xs mb-4 border border-white/5">
                     <div className="flex justify-between">
-                      <span className="text-gray-500">Configurations</span>
-                      <span className="font-semibold text-charcoal">{proj.types}</span>
+                      <span className="text-zinc-400">Configurations</span>
+                      <span className="font-semibold text-zinc-200">{proj.types}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-500">Timeline</span>
-                      <span className="font-semibold text-charcoal">{proj.possession}</span>
+                      <span className="text-zinc-400">Timeline</span>
+                      <span className="font-semibold text-[#F5C542]">{proj.possession}</span>
                     </div>
                   </div>
 
-                  <div className="text-lg font-bold text-charcoal font-display">
+                  <div className="text-lg font-bold text-[#F5C542] font-display">
                     {proj.price}
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function NewProjects() {
               <div className="p-5 pt-0">
                 <Link
                   href={`/properties`}
-                  className="w-full py-2.5 bg-emerald/10 hover:bg-emerald text-emerald hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors"
+                  className="w-full py-2.5 bg-[#F5C542]/10 hover:bg-[#F5C542] text-[#F5C542] hover:text-zinc-950 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-colors border border-[#F5C542]/20 hover:border-[#F5C542]"
                 >
                   <span>Request Project Brochure &amp; Floor Plans</span>
                   <ArrowRight size={13} />

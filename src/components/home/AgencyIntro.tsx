@@ -10,21 +10,21 @@ export default function AgencyIntro() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
               <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&q=80"
-                alt="Shree Maruti Nandan Properties Bulandshahr Property Consultancy"
-                className="w-full h-[420px] object-cover"
+                src="/images/about/office-inside.jpg"
+                alt="Shree Maruti Nandan Properties Bulandshahr Office Reception & Consultation Desk"
+                className="w-full h-[420px] object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] text-black text-xs font-bold mb-2 shadow-md">
                   <MapPin size={12} />
-                  <span>Bhoor Chauraha, Bulandshahr</span>
+                  <span>Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr</span>
                 </div>
                 <h4 className="font-display text-xl font-bold text-[#F5C542]">
                   Shree Maruti Nandan Properties
                 </h4>
                 <p className="text-zinc-300 text-xs mt-1">
-                  Serving buyers, sellers, landlords and investors across Western UP and NCR.
+                  Manoj Kumar Tyagi &amp; Ashish Chaudhary &bull; Serving Bulandshahr, Greater Noida, Khurja &amp; NCR.
                 </p>
               </div>
             </div>
@@ -36,8 +36,8 @@ export default function AgencyIntro() {
               </div>
               <div>
                 <p className="text-[10px] text-zinc-400 uppercase tracking-wider font-semibold">Direct Agency Helpline</p>
-                <a href="tel:+918460209025" className="text-sm font-bold text-[#F5C542] hover:underline">
-                  +91 8460209025
+                <a href="tel:+919997837133" className="text-sm font-bold text-[#F5C542] hover:underline">
+                  +91 9997837133 / 9548974761
                 </a>
               </div>
             </div>
@@ -56,10 +56,11 @@ export default function AgencyIntro() {
 
             <div className="space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
               <p>
-                Based near <strong className="text-white font-semibold">Bhoor Chauraha in Bulandshahr</strong>, 
-                <strong className="text-[#F5C542] font-semibold"> Shree Maruti Nandan Properties</strong> is a 
-                professional real estate agency and property consultancy dedicated to guiding clients through every stage 
-                of their property journey.
+                Based at <strong className="text-white font-semibold">Shop No. 375, T.P. Nagar Gol Chakkar in Bulandshahr</strong>, 
+                <strong className="text-[#F5C542] font-semibold"> Shree Maruti Nandan Properties</strong> is managed by 
+                <strong className="text-white font-semibold"> Manoj Kumar Tyagi</strong> and 
+                <strong className="text-white font-semibold"> Ashish Chaudhary</strong>, offering dependable real estate 
+                guidance across residential, commercial, and agricultural property sectors.
               </p>
               <p>
                 Whether you are searching for a residential plot to construct your family home, exploring fertile agricultural land, 

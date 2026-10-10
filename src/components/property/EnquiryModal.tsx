@@ -50,21 +50,21 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-      <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-100 animate-fade-up">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+      <div className="bg-[#131317] rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-white/10 animate-fade-up text-white">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-100 bg-gray-50/50">
+        <div className="flex items-center justify-between p-6 border-b border-white/10 bg-[#18181F]">
           <div>
-            <h3 className="font-display text-lg font-semibold text-charcoal">
+            <h3 className="font-display text-lg font-semibold text-[#F5C542]">
               Enquire About Property
             </h3>
-            <p className="text-xs text-gray-500 mt-0.5 truncate max-w-xs sm:max-w-sm">
+            <p className="text-xs text-zinc-400 mt-0.5 truncate max-w-xs sm:max-w-sm">
               {propertyTitle}
             </p>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-xl text-gray-400 hover:text-charcoal hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-xl text-zinc-400 hover:text-white hover:bg-white/10 transition-colors"
             aria-label="Close"
           >
             <X size={18} />
@@ -73,19 +73,19 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
 
         {submitted ? (
           <div className="p-8 text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-emerald/10 text-emerald flex items-center justify-center mx-auto">
+            <div className="w-16 h-16 rounded-full bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center mx-auto border border-[#F5C542]/20">
               <CheckCircle2 size={36} />
             </div>
-            <h4 className="font-display text-xl font-bold text-charcoal">
+            <h4 className="font-display text-xl font-bold text-[#F5C542]">
               Enquiry Sent Successfully!
             </h4>
-            <p className="text-xs sm:text-sm text-gray-500 max-w-sm mx-auto">
-              Thank you, <span className="font-semibold text-charcoal">{formData.name}</span>. Your enquiry has been delivered directly to <span className="font-semibold text-charcoal">{advertiserName}</span>. They will get in touch shortly.
+            <p className="text-xs sm:text-sm text-zinc-300 max-w-sm mx-auto">
+              Thank you, <span className="font-semibold text-white">{formData.name}</span>. Your enquiry has been delivered directly to <span className="font-semibold text-[#F5C542]">{advertiserName}</span>. They will get in touch shortly.
             </p>
             <div className="pt-4">
               <button
                 onClick={onClose}
-                className="px-6 py-2.5 bg-emerald text-white rounded-xl text-sm font-semibold hover:bg-emerald-dark transition-colors"
+                className="px-6 py-2.5 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 rounded-xl text-sm font-bold hover:brightness-105 transition-colors"
               >
                 Done
               </button>
@@ -94,7 +94,7 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
         ) : (
           <form onSubmit={handleSubmit} className="p-6 space-y-4">
             <div>
-              <label className="block text-xs font-semibold text-charcoal mb-1">
+              <label className="block text-xs font-semibold text-zinc-300 mb-1">
                 Your Full Name *
               </label>
               <input
@@ -103,17 +103,17 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
                 placeholder="e.g. Rahul Sharma"
                 value={formData.name}
                 onChange={e => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-emerald"
+                className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-[#18181F] text-white text-sm focus:outline-none focus:border-[#F5C542]"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-semibold text-charcoal mb-1">
+                <label className="block text-xs font-semibold text-zinc-300 mb-1">
                   Mobile Number *
                 </label>
                 <div className="flex">
-                  <span className="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-200 bg-gray-50 text-xs font-medium text-gray-600">
+                  <span className="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-white/10 bg-[#1C1C24] text-xs font-medium text-zinc-400">
                     +91
                   </span>
                   <input
@@ -123,13 +123,13 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
                     placeholder="10-digit number"
                     value={formData.phone}
                     onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3 py-2.5 rounded-r-xl border border-gray-200 text-sm focus:outline-none focus:border-emerald"
+                    className="w-full px-3 py-2.5 rounded-r-xl border border-white/10 bg-[#18181F] text-white text-sm focus:outline-none focus:border-[#F5C542]"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-charcoal mb-1">
+                <label className="block text-xs font-semibold text-zinc-300 mb-1">
                   Email Address *
                 </label>
                 <input
@@ -138,19 +138,19 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
                   placeholder="rahul@example.com"
                   value={formData.email}
                   onChange={e => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-emerald"
+                  className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-[#18181F] text-white text-sm focus:outline-none focus:border-[#F5C542]"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-charcoal mb-1">
+              <label className="block text-xs font-semibold text-zinc-300 mb-1">
                 Preferred Call Time
               </label>
               <select
                 value={formData.preferredTime}
                 onChange={e => setFormData({ ...formData, preferredTime: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-emerald bg-white text-charcoal"
+                className="w-full px-4 py-2.5 rounded-xl border border-white/10 text-sm focus:outline-none focus:border-[#F5C542] bg-[#18181F] text-white"
               >
                 <option value="anytime">Anytime during business hours</option>
                 <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
@@ -160,14 +160,14 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-charcoal mb-1">
+              <label className="block text-xs font-semibold text-zinc-300 mb-1">
                 Message to Advertiser
               </label>
               <textarea
                 rows={3}
                 value={formData.message}
                 onChange={e => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-emerald resize-none"
+                className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-[#18181F] text-white text-sm focus:outline-none focus:border-[#F5C542] resize-none"
               />
             </div>
 
@@ -175,7 +175,7 @@ export default function EnquiryModal({ propertyId, propertyTitle, advertiserName
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2 py-3 bg-emerald hover:bg-emerald-dark text-white rounded-xl font-semibold text-sm transition-all shadow-md"
+                className="w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] hover:brightness-105 text-zinc-950 rounded-xl font-bold text-sm transition-all shadow-md"
               >
                 <Send size={16} />
                 <span>{loading ? 'Submitting Enquiry...' : 'Submit Direct Enquiry'}</span>

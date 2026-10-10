@@ -96,16 +96,16 @@ export default function BulandshahrFocus() {
               Speak Directly with Shree Maruti Nandan Properties
             </h3>
             <p className="text-zinc-300 text-xs sm:text-sm mt-1">
-              Visit our office near Bhoor Chauraha or schedule an accompanied physical site visit.
+              Visit our office at Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr or schedule an accompanied physical site visit.
             </p>
           </div>
 
           <div className="flex items-center gap-3 flex-shrink-0">
             <a
-              href="tel:+918460209025"
+              href="tel:+919997837133"
               className="px-5 py-3 bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] hover:brightness-110 text-black rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md shadow-amber-500/20"
             >
-              Call +91 8460209025
+              Call +91 9997837133
             </a>
             <Link
               href="/contact"

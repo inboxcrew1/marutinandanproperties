@@ -25,11 +25,11 @@ export default function ContactCTASection() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:+918460209025"
+              href="tel:+919997837133"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] hover:brightness-110 text-black text-base font-bold rounded-2xl shadow-xl hover:shadow-2xl shadow-amber-500/25 transition-all duration-200 transform hover:-translate-y-0.5"
             >
               <Phone size={18} />
-              <span>Call +91 8460209025</span>
+              <span>Call +91 9997837133</span>
             </a>
 
             <Link
@@ -50,7 +50,7 @@ export default function ContactCTASection() {
           </div>
 
           <div className="mt-8 text-xs text-zinc-400">
-            <span>Location: Near Bhoor Chauraha, Bulandshahr, Uttar Pradesh, India</span>
+            <span>Location: Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr, Uttar Pradesh, India</span>
           </div>
         </div>
       </div>

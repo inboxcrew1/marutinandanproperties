@@ -17,7 +17,7 @@ export default function MobileBottomNav() {
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-100 lg:hidden safe-area-pb"
+      className="fixed bottom-0 left-0 right-0 z-40 bg-[#0B0B0E]/95 backdrop-blur-md border-t border-white/10 lg:hidden safe-area-pb"
       aria-label="Mobile bottom navigation"
     >
       <div className="flex items-center justify-around h-16 max-w-lg mx-auto">
@@ -28,12 +28,12 @@ export default function MobileBottomNav() {
               key={href}
               href={href}
               className={`flex flex-col items-center gap-1 py-2 px-3 rounded-lg transition-all duration-200 min-w-[56px] ${
-                isActive ? 'text-emerald' : 'text-gray-400 hover:text-charcoal'
+                isActive ? 'text-[#F5C542]' : 'text-zinc-400 hover:text-white'
               }`}
               aria-label={label}
               aria-current={isActive ? 'page' : undefined}
             >
-              <Icon size={22} className={isActive ? 'fill-emerald/10' : ''} />
+              <Icon size={22} className={isActive ? 'fill-[#F5C542]/20' : ''} />
               <span className="text-[10px] font-medium">{label}</span>
             </Link>
           )

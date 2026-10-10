@@ -18,19 +18,19 @@ export default function SimilarProperties({ currentId, category, city }: Similar
   if (similar.length === 0) return null
 
   return (
-    <section className="mt-12 pt-10 border-t border-gray-100">
+    <section className="mt-12 pt-10 border-t border-white/10">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="font-display text-2xl font-semibold text-charcoal">
+          <h2 className="font-display text-2xl font-semibold text-[#F5C542]">
             Similar Properties You May Like
           </h2>
-          <p className="text-xs sm:text-sm text-gray-500 mt-1">
+          <p className="text-xs sm:text-sm text-zinc-400 mt-1">
             Handpicked matching properties in {city} and surrounding localities
           </p>
         </div>
         <Link
           href={`/properties?city=${encodeURIComponent(city.toLowerCase())}`}
-          className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-emerald hover:text-emerald-dark transition-colors"
+          className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-[#F5C542] hover:text-[#FFF0A8] transition-colors"
         >
           <span>View All in {city}</span>
           <ArrowRight size={14} />

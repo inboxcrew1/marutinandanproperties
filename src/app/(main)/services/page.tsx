@@ -162,17 +162,17 @@ const servicesList = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-warm-white pt-24 pb-20">
+    <div className="min-h-screen bg-[#0B0B0E] pt-24 pb-20">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald bg-emerald/10 px-3.5 py-1.5 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#F5C542] bg-[#F5C542]/10 border border-[#F5C542]/20 px-3.5 py-1.5 rounded-full mb-4">
             <span>What We Offer</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-charcoal leading-tight">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-[#F5C542] leading-tight">
             Our Property Services
           </h1>
-          <p className="text-gray-600 text-sm sm:text-base mt-4 leading-relaxed font-light">
+          <p className="text-zinc-400 text-sm sm:text-base mt-4 leading-relaxed font-light">
             Shree Maruti Nandan Properties offers dedicated, personal consultation across 
             residential, commercial, plotted, and agricultural real estate.
           </p>
@@ -186,33 +186,33 @@ export default function ServicesPage() {
               <div
                 key={service.id}
                 id={service.id}
-                className="bg-white rounded-3xl border border-gray-200/80 overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group"
+                className="bg-[#131317] rounded-3xl border border-white/10 overflow-hidden shadow-lg hover:border-[#F5C542]/40 hover:shadow-[0_8px_30px_rgba(245,197,66,0.12)] transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Service Image */}
-                  <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+                  <div className="relative h-48 w-full overflow-hidden bg-zinc-900">
                     <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent" />
-                    <span className="absolute bottom-3 left-4 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-white text-charcoal shadow-sm">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#131317] via-transparent to-transparent" />
+                    <span className="absolute bottom-3 left-4 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#0B0B0E]/90 text-[#F5C542] border border-[#F5C542]/30 shadow-sm backdrop-blur-sm">
                       {service.category}
                     </span>
                   </div>
 
                   {/* Content */}
                   <div className="p-6">
-                    <div className="w-10 h-10 rounded-xl bg-emerald/10 text-emerald flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#F5C542]/10 border border-[#F5C542]/20 text-[#F5C542] flex items-center justify-center mb-3">
                       <Icon size={20} />
                     </div>
 
-                    <h3 className="font-display font-bold text-xl text-charcoal mb-2 group-hover:text-emerald transition-colors">
+                    <h3 className="font-display font-bold text-xl text-white mb-2 group-hover:text-[#F5C542] transition-colors">
                       {service.title}
                     </h3>
 
-                    <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-light">
+                    <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
                       {service.description}
                     </p>
                   </div>
@@ -222,7 +222,7 @@ export default function ServicesPage() {
                 <div className="px-6 pb-6 pt-2">
                   <Link
                     href={service.href}
-                    className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-warm-white hover:bg-emerald text-charcoal hover:text-white border border-gray-200/80 hover:border-emerald text-xs font-semibold transition-all duration-200"
+                    className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-white/5 hover:bg-[#F5C542] text-zinc-200 hover:text-zinc-950 border border-white/10 hover:border-[#F5C542] text-xs font-semibold transition-all duration-200"
                   >
                     <span>{service.cta}</span>
                     <ArrowRight size={14} />
@@ -234,26 +234,26 @@ export default function ServicesPage() {
         </div>
 
         {/* Direct Consultation Box */}
-        <div className="bg-charcoal text-white rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#131317] border border-white/10 text-white rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <span className="text-emerald-light text-xs font-bold uppercase tracking-wider block mb-1">
+            <span className="text-[#F5C542] text-xs font-bold uppercase tracking-wider block mb-1">
               Need Personal Guidance?
             </span>
-            <h3 className="font-display text-2xl sm:text-3xl font-bold">
+            <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#F5C542]">
               Consult Shree Maruti Nandan Properties
             </h3>
-            <p className="text-gray-300 text-xs sm:text-sm mt-1 max-w-xl font-light">
-              Visit our office near Bhoor Chauraha, Bulandshahr, or speak directly with our team for honest property guidance.
+            <p className="text-zinc-300 text-xs sm:text-sm mt-1 max-w-xl font-light">
+              Visit our office at Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr, or speak directly with Manoj Kumar Tyagi &amp; Ashish Chaudhary for honest property guidance.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3 flex-shrink-0">
             <a
-              href="tel:+918460209025"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald hover:bg-emerald-light text-white rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md"
+              href="tel:+919997837133"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md hover:brightness-105"
             >
               <Phone size={15} />
-              <span>+91 8460209025</span>
+              <span>+91 9997837133</span>
             </a>
             <Link
               href="/contact"

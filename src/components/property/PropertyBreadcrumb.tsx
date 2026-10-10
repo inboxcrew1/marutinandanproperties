@@ -12,20 +12,20 @@ interface PropertyBreadcrumbProps {
 
 export default function PropertyBreadcrumb({ items }: PropertyBreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className="flex items-center text-xs text-gray-500 py-3 overflow-x-auto whitespace-nowrap">
-      <Link href="/" className="flex items-center hover:text-emerald transition-colors">
-        <Home size={13} className="mr-1 text-gray-400" />
+    <nav aria-label="Breadcrumb" className="flex items-center text-xs text-zinc-400 py-3 overflow-x-auto whitespace-nowrap">
+      <Link href="/" className="flex items-center hover:text-[#F5C542] transition-colors">
+        <Home size={13} className="mr-1 text-zinc-500" />
         <span>Home</span>
       </Link>
       {items.map((item, index) => (
         <div key={index} className="flex items-center">
-          <ChevronRight size={12} className="mx-2 text-gray-300 flex-shrink-0" />
+          <ChevronRight size={12} className="mx-2 text-zinc-600 flex-shrink-0" />
           {item.href ? (
-            <Link href={item.href} className="hover:text-emerald transition-colors">
+            <Link href={item.href} className="hover:text-[#F5C542] transition-colors">
               {item.label}
             </Link>
           ) : (
-            <span className="text-charcoal font-medium truncate max-w-[200px] sm:max-w-xs">{item.label}</span>
+            <span className="text-white font-medium truncate max-w-[200px] sm:max-w-xs">{item.label}</span>
           )}
         </div>
       ))}

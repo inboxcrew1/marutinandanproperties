@@ -142,10 +142,10 @@ export default function ServicesOverview() {
                 <ArrowRight size={15} />
               </Link>
               <a
-                href="tel:+918460209025"
+                href="tel:+919997837133"
                 className="text-xs sm:text-sm font-semibold text-zinc-300 hover:text-[#F5C542] transition-colors"
               >
-                Call to List: +91 8460209025 &rarr;
+                Call to List: +91 9997837133 &rarr;
               </a>
             </div>
           </div>

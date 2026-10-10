@@ -35,17 +35,17 @@ export default function PropertyAmenities({ amenities }: PropertyAmenitiesProps)
   if (!amenities || amenities.length === 0) return null
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 shadow-sm">
+    <div className="bg-[#131317] rounded-2xl border border-white/10 p-6 sm:p-8 shadow-xl">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="font-display text-xl sm:text-2xl font-semibold text-charcoal">
+          <h2 className="font-display text-xl sm:text-2xl font-semibold text-[#F5C542]">
             Amenities &amp; Features
           </h2>
-          <p className="text-xs sm:text-sm text-gray-500 mt-1">
+          <p className="text-xs sm:text-sm text-zinc-400 mt-1">
             Comforts, security, and facilities available with this property
           </p>
         </div>
-        <span className="text-xs font-semibold text-emerald bg-emerald/10 px-3 py-1 rounded-full">
+        <span className="text-xs font-semibold text-[#F5C542] bg-[#F5C542]/10 border border-[#F5C542]/20 px-3 py-1 rounded-full">
           {amenities.length} Features
         </span>
       </div>
@@ -57,12 +57,12 @@ export default function PropertyAmenities({ amenities }: PropertyAmenitiesProps)
           return (
             <div
               key={amenity.id}
-              className="flex items-center gap-3 p-3.5 rounded-xl border border-gray-100 bg-gray-50/50 hover:bg-white hover:border-emerald/30 hover:shadow-sm transition-all duration-200"
+              className="flex items-center gap-3 p-3.5 rounded-xl border border-white/5 bg-[#18181F] hover:border-[#F5C542]/30 hover:shadow-sm transition-all duration-200"
             >
-              <div className="w-8 h-8 rounded-lg bg-emerald/10 text-emerald flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0">
                 <Icon size={16} />
               </div>
-              <span className="text-xs sm:text-sm font-medium text-charcoal truncate">
+              <span className="text-xs sm:text-sm font-medium text-zinc-200 truncate">
                 {amenity.name}
               </span>
             </div>

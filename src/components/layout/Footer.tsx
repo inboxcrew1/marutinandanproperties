@@ -66,14 +66,14 @@ export default function Footer() {
 
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href="tel:+918460209025"
+                href="tel:+919997837133"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#141418] border border-amber-500/30 text-[#F5C542] hover:bg-amber-500/10 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-sm"
               >
                 <Phone size={15} className="text-[#F5C542]" />
-                <span>+91 8460209025</span>
+                <span>+91 9997837133</span>
               </a>
               <a
-                href="https://wa.me/918460209025?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20would%20like%20to%20consult%20regarding%20property."
+                href="https://wa.me/919997837133?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20would%20like%20to%20consult%20regarding%20property."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 text-black rounded-xl text-xs sm:text-sm font-extrabold shadow-[0_0_15px_rgba(245,197,66,0.3)] hover:shadow-[0_0_25px_rgba(245,197,66,0.5)] transition-all"
@@ -107,20 +107,20 @@ export default function Footer() {
             {/* Factual Address Details */}
             <div className="space-y-3 text-xs text-gray-300">
               <div className="flex items-start gap-2.5">
-                <MapPin size={16} className="text-emerald-light flex-shrink-0 mt-0.5" />
+                <MapPin size={16} className="text-[#F5C542] flex-shrink-0 mt-0.5" />
                 <div className="space-y-0.5">
                   <p className="font-semibold text-white">Office Location:</p>
-                  <p className="text-gray-400">Near Bhoor Chauraha, Bulandshahr, Uttar Pradesh, India</p>
-                  <p className="text-gray-400 text-[11px]">(Shop No. 251, Near Gate No. 2, Transport Nagar)</p>
+                  <p className="text-gray-400">Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr, Uttar Pradesh</p>
+                  <p className="text-gray-400 text-[11px]">(Deals In: Bulandshahr, Greater Noida, Khurja &amp; NCR)</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5">
-                <Phone size={16} className="text-emerald-light flex-shrink-0" />
+                <Phone size={16} className="text-[#F5C542] flex-shrink-0" />
                 <div>
-                  <span className="text-gray-400">Direct Consultation: </span>
-                  <a href="tel:+918460209025" className="text-white font-medium hover:text-emerald-light">
-                    +91 8460209025
+                  <span className="text-gray-400">Direct Helpline: </span>
+                  <a href="tel:+919997837133" className="text-white font-medium hover:text-[#F5C542]">
+                    +91 9997837133 / 9548974761
                   </a>
                 </div>
               </div>

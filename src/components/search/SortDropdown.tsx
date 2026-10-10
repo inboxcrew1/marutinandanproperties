@@ -39,10 +39,10 @@ export default function SortDropdown() {
       <select
         value={currentSort}
         onChange={e => handleSortChange(e.target.value)}
-        className="px-3 py-2 bg-white border border-gray-200 rounded-xl text-xs font-semibold text-charcoal focus:outline-none focus:border-emerald cursor-pointer shadow-sm"
+        className="px-3 py-2 bg-[#18181F] border border-white/10 rounded-xl text-xs font-semibold text-white focus:outline-none focus:border-[#F5C542] cursor-pointer shadow-sm"
       >
         {sortOptions.map(opt => (
-          <option key={opt.value} value={opt.value}>
+          <option key={opt.value} value={opt.value} className="bg-[#18181F] text-white">
             {opt.label}
           </option>
         ))}

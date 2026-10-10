@@ -93,10 +93,10 @@ export default function PropertySearchResults({
       {/* Top Banner and Heading */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
         <div>
-          <h1 className="font-display text-2xl sm:text-3xl font-bold text-charcoal">
+          <h1 className="font-display text-2xl sm:text-3xl font-bold text-[#F5C542]">
             {title}
           </h1>
-          <p className="text-xs sm:text-sm text-gray-500 mt-1">
+          <p className="text-xs sm:text-sm text-zinc-400 mt-1">
             {subtitle || `Showing ${filtered.length} verified and available properties`}
           </p>
         </div>
@@ -106,20 +106,20 @@ export default function PropertySearchResults({
           <button
             type="button"
             onClick={() => setMobileFilterOpen(true)}
-            className="lg:hidden flex items-center gap-1.5 px-3 py-2 bg-white border border-gray-200 rounded-xl text-xs font-semibold text-charcoal shadow-sm"
+            className="lg:hidden flex items-center gap-1.5 px-3 py-2 bg-[#131317] border border-white/10 hover:border-[#F5C542]/40 rounded-xl text-xs font-semibold text-white shadow-sm"
           >
-            <SlidersHorizontal size={14} />
+            <SlidersHorizontal size={14} className="text-[#F5C542]" />
             <span>Filters</span>
           </button>
 
           <SortDropdown />
 
-          <div className="hidden sm:flex items-center bg-gray-100 p-1 rounded-xl border border-gray-200">
+          <div className="hidden sm:flex items-center bg-[#18181F] p-1 rounded-xl border border-white/10">
             <button
               onClick={() => setViewMode('grid')}
               aria-label="Grid view"
               className={`p-1.5 rounded-lg transition-colors ${
-                viewMode === 'grid' ? 'bg-white text-emerald shadow-sm' : 'text-gray-400 hover:text-charcoal'
+                viewMode === 'grid' ? 'bg-[#F5C542] text-zinc-950 font-bold shadow-sm' : 'text-zinc-400 hover:text-white'
               }`}
             >
               <LayoutGrid size={16} />
@@ -128,7 +128,7 @@ export default function PropertySearchResults({
               onClick={() => setViewMode('list')}
               aria-label="List view"
               className={`p-1.5 rounded-lg transition-colors ${
-                viewMode === 'list' ? 'bg-white text-emerald shadow-sm' : 'text-gray-400 hover:text-charcoal'
+                viewMode === 'list' ? 'bg-[#F5C542] text-zinc-950 font-bold shadow-sm' : 'text-zinc-400 hover:text-white'
               }`}
             >
               <List size={16} />
@@ -137,7 +137,7 @@ export default function PropertySearchResults({
               onClick={() => setViewMode('map')}
               aria-label="Map view"
               className={`p-1.5 rounded-lg transition-colors ${
-                viewMode === 'map' ? 'bg-white text-emerald shadow-sm' : 'text-gray-400 hover:text-charcoal'
+                viewMode === 'map' ? 'bg-[#F5C542] text-zinc-950 font-bold shadow-sm' : 'text-zinc-400 hover:text-white'
               }`}
             >
               <Map size={16} />
@@ -149,16 +149,16 @@ export default function PropertySearchResults({
       {/* Active Filter Chips */}
       {activeFilters.length > 0 && (
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-gray-400 font-medium">Applied:</span>
+          <span className="text-xs text-zinc-400 font-medium">Applied:</span>
           {activeFilters.map(chip => (
             <span
               key={chip.key}
-              className="inline-flex items-center gap-1 text-xs bg-emerald/10 text-emerald font-semibold px-2.5 py-1 rounded-full border border-emerald/20"
+              className="inline-flex items-center gap-1 text-xs bg-[#F5C542]/10 text-[#F5C542] font-semibold px-2.5 py-1 rounded-full border border-[#F5C542]/30"
             >
               <span>{chip.label}</span>
               <button
                 onClick={() => removeFilter(chip.key)}
-                className="hover:text-emerald-dark"
+                className="hover:text-white"
                 aria-label={`Remove filter ${chip.label}`}
               >
                 <X size={12} />
@@ -167,7 +167,7 @@ export default function PropertySearchResults({
           ))}
           <button
             onClick={() => router.push(pathname)}
-            className="text-xs text-gray-500 hover:text-red-500 underline ml-2"
+            className="text-xs text-zinc-400 hover:text-red-400 underline ml-2"
           >
             Clear All
           </button>
@@ -210,11 +210,11 @@ export default function PropertySearchResults({
 
               {/* Pagination */}
               {totalPages > 1 && (
-                <div className="flex items-center justify-center gap-2 mt-12 pt-6 border-t border-gray-100">
+                <div className="flex items-center justify-center gap-2 mt-12 pt-6 border-t border-white/10">
                   <button
                     disabled={currentPage === 1}
                     onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-gray-200 disabled:opacity-40 hover:bg-gray-50"
+                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-[#131317] border border-white/10 text-zinc-300 disabled:opacity-30 hover:border-[#F5C542]"
                   >
                     Previous
                   </button>
@@ -224,8 +224,8 @@ export default function PropertySearchResults({
                       onClick={() => setCurrentPage(i + 1)}
                       className={`w-9 h-9 rounded-xl text-xs font-semibold transition-colors ${
                         currentPage === i + 1
-                          ? 'bg-emerald text-white'
-                          : 'bg-white border border-gray-200 text-charcoal hover:bg-gray-50'
+                          ? 'bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-bold shadow-md'
+                          : 'bg-[#131317] border border-white/10 text-zinc-300 hover:border-[#F5C542]'
                       }`}
                     >
                       {i + 1}
@@ -234,7 +234,7 @@ export default function PropertySearchResults({
                   <button
                     disabled={currentPage === totalPages}
                     onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-gray-200 disabled:opacity-40 hover:bg-gray-50"
+                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-[#131317] border border-white/10 text-zinc-300 disabled:opacity-30 hover:border-[#F5C542]"
                   >
                     Next
                   </button>
@@ -249,10 +249,10 @@ export default function PropertySearchResults({
       {mobileFilterOpen && (
         <div className="fixed inset-0 z-50 lg:hidden flex">
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={() => setMobileFilterOpen(false)}
           />
-          <div className="relative ml-auto w-full max-w-xs sm:max-w-sm h-full bg-white shadow-2xl overflow-y-auto animate-fade-in z-10">
+          <div className="relative ml-auto w-full max-w-xs sm:max-w-sm h-full bg-[#131317] border-l border-white/10 shadow-2xl overflow-y-auto animate-fade-in z-10">
             <FilterSidebar
               isMobile
               onCloseMobile={() => setMobileFilterOpen(false)}

@@ -58,13 +58,13 @@ export default function NearbyPlaces({ city, locality }: NearbyPlacesProps) {
   ]
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 shadow-sm">
+    <div className="bg-[#131317] rounded-2xl border border-white/10 p-6 sm:p-8 shadow-xl">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
         <div>
-          <h2 className="font-display text-xl sm:text-2xl font-semibold text-charcoal">
+          <h2 className="font-display text-xl sm:text-2xl font-semibold text-[#F5C542]">
             What&apos;s Nearby in {city}
           </h2>
-          <p className="text-xs sm:text-sm text-gray-500 mt-1">
+          <p className="text-xs sm:text-sm text-zinc-400 mt-1">
             Key infrastructure, public transit, and daily convenience landmarks
           </p>
         </div>
@@ -74,19 +74,19 @@ export default function NearbyPlaces({ city, locality }: NearbyPlacesProps) {
         {nearbyCategories.map(({ icon: Icon, label, items }) => (
           <div
             key={label}
-            className="p-4 rounded-xl border border-gray-100 bg-gray-50/40 hover:bg-white hover:border-emerald/20 transition-all duration-200"
+            className="p-4 rounded-xl border border-white/5 bg-[#18181F] hover:border-[#F5C542]/30 transition-all duration-200"
           >
-            <div className="flex items-center gap-2.5 mb-3 text-emerald font-semibold text-sm">
-              <div className="w-8 h-8 rounded-lg bg-emerald/10 flex items-center justify-center">
+            <div className="flex items-center gap-2.5 mb-3 text-[#F5C542] font-semibold text-sm">
+              <div className="w-8 h-8 rounded-lg bg-[#F5C542]/10 flex items-center justify-center">
                 <Icon size={16} />
               </div>
-              <span className="text-charcoal font-medium text-xs sm:text-sm truncate">{label}</span>
+              <span className="text-white font-medium text-xs sm:text-sm truncate">{label}</span>
             </div>
             <ul className="space-y-2">
               {items.map((item, idx) => (
                 <li key={idx} className="flex items-center justify-between text-xs">
-                  <span className="text-gray-600 truncate mr-2">{item.name}</span>
-                  <span className="font-semibold text-charcoal flex-shrink-0 bg-white px-2 py-0.5 rounded border border-gray-100">
+                  <span className="text-zinc-400 truncate mr-2">{item.name}</span>
+                  <span className="font-semibold text-[#F5C542] flex-shrink-0 bg-white/5 px-2 py-0.5 rounded border border-white/10">
                     {item.distance}
                   </span>
                 </li>
@@ -96,7 +96,7 @@ export default function NearbyPlaces({ city, locality }: NearbyPlacesProps) {
         ))}
       </div>
 
-      <p className="text-[11px] text-gray-400 mt-5 pt-4 border-t border-gray-100">
+      <p className="text-[11px] text-zinc-500 mt-5 pt-4 border-t border-white/10">
         Distances are estimated road distances calculated from verified locality coordinates.
       </p>
     </div>

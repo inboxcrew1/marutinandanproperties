@@ -88,9 +88,9 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
     : formatPrice(property.price.amount)
 
   const advertiserFallback: Advertiser = property.advertiser || {
-    name: 'Authorized Property Advertiser',
-    type: 'owner',
-    phone: '9876543210',
+    name: 'Shree Maruti Nandan Properties',
+    type: 'agency',
+    phone: '9997837133',
     verificationStatus: 'verified',
   }
 
@@ -135,7 +135,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="min-h-screen bg-warm-white pb-24 lg:pb-16 pt-20">
+      <div className="min-h-screen bg-[#0B0B0E] pb-24 lg:pb-16 pt-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <PropertyBreadcrumb
@@ -148,22 +148,22 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
           />
 
           {/* Title & Top Meta Section */}
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 py-4 mb-4 border-b border-gray-100">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 py-4 mb-4 border-b border-white/10">
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <PropertyStatusBadge status={(property.status || 'available') as PropertyStatus} />
-                <span className="text-xs font-semibold uppercase tracking-wider text-emerald bg-emerald/10 px-2.5 py-0.5 rounded-full">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#F5C542] bg-[#F5C542]/10 border border-[#F5C542]/20 px-2.5 py-0.5 rounded-full">
                   {property.category} &bull; {property.subcategory.replace(/_/g, ' ')}
                 </span>
-                <span className="text-xs text-gray-400">
+                <span className="text-xs text-zinc-500">
                   ID: {property.id}
                 </span>
               </div>
-              <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal leading-tight">
+              <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F5C542] leading-tight">
                 {property.title}
               </h1>
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 mt-2">
-                <MapPin size={15} className="text-emerald flex-shrink-0" />
+              <div className="flex items-center gap-2 text-xs sm:text-sm text-zinc-400 mt-2">
+                <MapPin size={15} className="text-[#F5C542] flex-shrink-0" />
                 <span>{property.location.address ? `${property.location.address}, ` : ''}{locality}, {property.location.city}, {property.location.state}</span>
               </div>
             </div>
@@ -171,10 +171,10 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
             {/* Price & Client Interactive Actions (Save, Share, Compare) */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 lg:text-right">
               <div>
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal font-display tracking-tight">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F5C542] font-display tracking-tight">
                   {displayPrice}
                 </div>
-                <div className="text-xs text-gray-500 mt-0.5">
+                <div className="text-xs text-zinc-400 mt-0.5">
                   {property.price.isNegotiable ? 'Price Negotiable' : 'Fixed Price'}
                   {property.area.value && !isRent && (
                     <span> &bull; ₹{Math.round(property.price.amount / property.area.value).toLocaleString('en-IN')} / {property.area.unit}</span>
@@ -206,11 +206,11 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               <PropertyOverview property={property} />
 
               {/* Description */}
-              <div className="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 shadow-sm">
-                <h2 className="font-display text-xl sm:text-2xl font-semibold text-charcoal mb-4">
+              <div className="bg-[#131317] rounded-2xl border border-white/10 p-6 sm:p-8 shadow-xl">
+                <h2 className="font-display text-xl sm:text-2xl font-semibold text-[#F5C542] mb-4">
                   About this Property
                 </h2>
-                <div className="prose text-gray-600 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                <div className="prose text-zinc-300 text-sm sm:text-base leading-relaxed whitespace-pre-line font-light">
                   {property.description || 'Verified property listing with Shree Maruti Nandan Properties. Contact our agency desk for complete inspection and accompanied site visits.'}
                 </div>
               </div>
@@ -239,25 +239,25 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               />
 
               {/* Quick Affordability Summary */}
-              <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm text-xs space-y-3">
-                <h3 className="font-semibold text-charcoal text-sm uppercase tracking-wider">
+              <div className="bg-[#131317] rounded-2xl border border-white/10 p-6 shadow-xl text-xs space-y-3">
+                <h3 className="font-semibold text-[#F5C542] text-sm uppercase tracking-wider">
                   Listing Quick Summary
                 </h3>
-                <div className="flex justify-between py-1.5 border-b border-gray-50">
-                  <span className="text-gray-500">Transaction Type</span>
-                  <span className="font-semibold text-charcoal uppercase">For {property.listingType}</span>
+                <div className="flex justify-between py-1.5 border-b border-white/5">
+                  <span className="text-zinc-400">Transaction Type</span>
+                  <span className="font-semibold text-white uppercase">For {property.listingType}</span>
                 </div>
-                <div className="flex justify-between py-1.5 border-b border-gray-50">
-                  <span className="text-gray-500">Listed Area</span>
-                  <span className="font-semibold text-charcoal">{formatArea(property.area.value, property.area.unit)}</span>
+                <div className="flex justify-between py-1.5 border-b border-white/5">
+                  <span className="text-zinc-400">Listed Area</span>
+                  <span className="font-semibold text-white">{formatArea(property.area.value, property.area.unit)}</span>
                 </div>
-                <div className="flex justify-between py-1.5 border-b border-gray-50">
-                  <span className="text-gray-500">Legal Verification</span>
-                  <span className="font-semibold text-emerald capitalize">{property.verificationStatus}</span>
+                <div className="flex justify-between py-1.5 border-b border-white/5">
+                  <span className="text-zinc-400">Legal Verification</span>
+                  <span className="font-semibold text-[#F5C542] capitalize">{property.verificationStatus}</span>
                 </div>
                 <div className="flex justify-between py-1.5">
-                  <span className="text-gray-500">Bank Home Loan</span>
-                  <span className="font-semibold text-charcoal">{property.loanAvailable !== false ? 'Available' : 'Check Eligibility'}</span>
+                  <span className="text-zinc-400">Bank Home Loan</span>
+                  <span className="font-semibold text-white">{property.loanAvailable !== false ? 'Available' : 'Check Eligibility'}</span>
                 </div>
               </div>
             </div>
@@ -273,25 +273,25 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
       </div>
 
       {/* Mobile Sticky Bottom Action Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 p-3 sm:px-6 lg:hidden flex items-center justify-between gap-3 shadow-lg">
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#0B0B0E]/95 backdrop-blur-md border-t border-white/10 p-3 sm:px-6 lg:hidden flex items-center justify-between gap-3 shadow-2xl">
         <div>
-          <div className="text-xs text-gray-400">Total Price</div>
-          <div className="text-lg font-bold text-charcoal font-display leading-tight">{displayPrice}</div>
+          <div className="text-xs text-zinc-400">Total Price</div>
+          <div className="text-lg font-bold text-[#F5C542] font-display leading-tight">{displayPrice}</div>
         </div>
         <div className="flex items-center gap-2">
           {advertiserFallback.phone && (
             <a
               href={`tel:+91${advertiserFallback.phone.replace(/[^0-9]/g, '')}`}
-              className="px-4 py-2.5 rounded-xl border border-charcoal text-charcoal text-xs font-semibold hover:bg-gray-50 transition-colors"
+              className="px-4 py-2.5 rounded-xl border border-white/20 text-white text-xs font-semibold hover:border-[#F5C542] hover:text-[#F5C542] transition-colors"
             >
               Call
             </a>
           )}
           <a
-            href={`https://wa.me/91${(advertiserFallback.phone || '9876543210').replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hi, I am interested in ${property.title}`)}`}
+            href={`https://wa.me/91${(advertiserFallback.phone || '9997837133').replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hi, I am interested in ${property.title}`)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2.5 rounded-xl bg-emerald text-white text-xs font-semibold hover:bg-emerald-dark transition-colors shadow-sm"
+            className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-bold text-xs hover:brightness-105 transition-colors shadow-sm"
           >
             WhatsApp
           </a>

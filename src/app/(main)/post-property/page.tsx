@@ -184,7 +184,7 @@ export default function PostPropertyPage() {
         id: `adv-${Date.now()}`,
         name: ownerName || 'Property Advertiser',
         type: advertiserType,
-        phone: ownerPhone || '8460209025',
+        phone: ownerPhone || '9997837133',
         email: ownerEmail || 'contact@shreemarutinandanproperties.com',
         verificationStatus: 'unverified',
         totalListings: 1,

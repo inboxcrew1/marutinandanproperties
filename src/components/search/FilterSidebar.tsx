@@ -125,27 +125,27 @@ export default function FilterSidebar({
   }
 
   return (
-    <aside className={`bg-white rounded-2xl border border-gray-100 p-5 shadow-sm space-y-6 ${isMobile ? 'border-0 p-4' : ''}`}>
+    <aside className={`bg-[#131317] rounded-2xl border border-white/10 p-5 shadow-xl space-y-6 text-white ${isMobile ? 'border-0 p-4' : ''}`}>
       {/* Header */}
-      <div className="flex items-center justify-between pb-4 border-b border-gray-100">
+      <div className="flex items-center justify-between pb-4 border-b border-white/10">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-emerald/10 text-emerald flex items-center justify-center">
+          <div className="w-8 h-8 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center">
             <SlidersHorizontal size={16} />
           </div>
-          <h2 className="font-display font-semibold text-lg text-charcoal">
+          <h2 className="font-display font-semibold text-lg text-[#F5C542]">
             Filters
           </h2>
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={handleReset}
-            className="flex items-center gap-1 text-xs font-semibold text-gray-400 hover:text-emerald transition-colors"
+            className="flex items-center gap-1 text-xs font-semibold text-zinc-400 hover:text-[#F5C542] transition-colors"
           >
             <RotateCcw size={13} />
             <span>Reset</span>
           </button>
           {isMobile && onCloseMobile && (
-            <button onClick={onCloseMobile} className="p-1.5 text-gray-400 hover:text-charcoal">
+            <button onClick={onCloseMobile} className="p-1.5 text-zinc-400 hover:text-white">
               <X size={18} />
             </button>
           )}
@@ -155,15 +155,15 @@ export default function FilterSidebar({
       {/* Listing Type Toggle (Buy / Rent) */}
       {!defaultListingType && (
         <div>
-          <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+          <label className="block text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
             Transaction Mode
           </label>
-          <div className="grid grid-cols-2 gap-2 bg-gray-50 p-1 rounded-xl border border-gray-100">
+          <div className="grid grid-cols-2 gap-2 bg-[#18181F] p-1 rounded-xl border border-white/10">
             <button
               type="button"
               onClick={() => setListingType(listingType === 'sale' ? '' : 'sale')}
               className={`py-2 rounded-lg text-xs font-semibold transition-all ${
-                listingType === 'sale' ? 'bg-white text-emerald shadow-sm font-bold' : 'text-gray-500 hover:text-charcoal'
+                listingType === 'sale' ? 'bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-bold shadow-sm' : 'text-zinc-400 hover:text-white'
               }`}
             >
               For Sale
@@ -172,7 +172,7 @@ export default function FilterSidebar({
               type="button"
               onClick={() => setListingType(listingType === 'rent' ? '' : 'rent')}
               className={`py-2 rounded-lg text-xs font-semibold transition-all ${
-                listingType === 'rent' ? 'bg-white text-emerald shadow-sm font-bold' : 'text-gray-500 hover:text-charcoal'
+                listingType === 'rent' ? 'bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-bold shadow-sm' : 'text-zinc-400 hover:text-white'
               }`}
             >
               For Rent
@@ -186,7 +186,7 @@ export default function FilterSidebar({
         <button
           type="button"
           onClick={() => toggleSection('location')}
-          className="w-full flex items-center justify-between text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2"
+          className="w-full flex items-center justify-between text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2"
         >
           <span>City / Region</span>
           {sectionsOpen.location ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -195,10 +195,10 @@ export default function FilterSidebar({
           <select
             value={city}
             onChange={e => setCity(e.target.value)}
-            className="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-medium text-charcoal focus:bg-white focus:border-emerald focus:outline-none"
+            className="w-full px-3.5 py-2.5 bg-[#18181F] border border-white/10 rounded-xl text-xs font-medium text-white focus:border-[#F5C542] focus:outline-none"
           >
             {cities.map(c => (
-              <option key={c} value={c === 'All Cities' ? '' : c.toLowerCase()}>
+              <option key={c} value={c === 'All Cities' ? '' : c.toLowerCase()} className="bg-[#18181F] text-white">
                 {c}
               </option>
             ))}
@@ -211,7 +211,7 @@ export default function FilterSidebar({
         <button
           type="button"
           onClick={() => toggleSection('propertyType')}
-          className="w-full flex items-center justify-between text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2"
+          className="w-full flex items-center justify-between text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2"
         >
           <span>Property Type</span>
           {sectionsOpen.propertyType ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -227,8 +227,8 @@ export default function FilterSidebar({
                   onClick={() => setType(isSelected ? '' : t.value)}
                   className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium text-left transition-colors ${
                     isSelected
-                      ? 'bg-emerald/10 text-emerald font-semibold'
-                      : 'text-gray-600 hover:bg-gray-50'
+                      ? 'bg-[#F5C542]/15 text-[#F5C542] font-semibold border border-[#F5C542]/30'
+                      : 'text-zinc-300 hover:bg-white/5'
                   }`}
                 >
                   <span>{t.label}</span>
@@ -245,7 +245,7 @@ export default function FilterSidebar({
         <button
           type="button"
           onClick={() => toggleSection('price')}
-          className="w-full flex items-center justify-between text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2"
+          className="w-full flex items-center justify-between text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2"
         >
           <span>Budget Range</span>
           {sectionsOpen.price ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -253,34 +253,34 @@ export default function FilterSidebar({
         {sectionsOpen.price && (
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <span className="text-[10px] text-gray-400 block mb-1">Min Price</span>
+              <span className="text-[10px] text-zinc-400 block mb-1">Min Price</span>
               <select
                 value={minPrice}
                 onChange={e => setMinPrice(e.target.value)}
-                className="w-full px-2.5 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs text-charcoal focus:bg-white focus:border-emerald focus:outline-none"
+                className="w-full px-2.5 py-2 bg-[#18181F] border border-white/10 rounded-xl text-xs text-white focus:border-[#F5C542] focus:outline-none"
               >
-                <option value="">Any Min</option>
-                <option value="1000000">₹10 Lakh</option>
-                <option value="2500000">₹25 Lakh</option>
-                <option value="5000000">₹50 Lakh</option>
-                <option value="10000000">₹1 Crore</option>
-                <option value="20000000">₹2 Crore</option>
+                <option value="" className="bg-[#18181F] text-white">Any Min</option>
+                <option value="1000000" className="bg-[#18181F] text-white">₹10 Lakh</option>
+                <option value="2500000" className="bg-[#18181F] text-white">₹25 Lakh</option>
+                <option value="5000000" className="bg-[#18181F] text-white">₹50 Lakh</option>
+                <option value="10000000" className="bg-[#18181F] text-white">₹1 Crore</option>
+                <option value="20000000" className="bg-[#18181F] text-white">₹2 Crore</option>
               </select>
             </div>
             <div>
-              <span className="text-[10px] text-gray-400 block mb-1">Max Price</span>
+              <span className="text-[10px] text-zinc-400 block mb-1">Max Price</span>
               <select
                 value={maxPrice}
                 onChange={e => setMaxPrice(e.target.value)}
-                className="w-full px-2.5 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs text-charcoal focus:bg-white focus:border-emerald focus:outline-none"
+                className="w-full px-2.5 py-2 bg-[#18181F] border border-white/10 rounded-xl text-xs text-white focus:border-[#F5C542] focus:outline-none"
               >
-                <option value="">Any Max</option>
-                <option value="2500000">₹25 Lakh</option>
-                <option value="5000000">₹50 Lakh</option>
-                <option value="10000000">₹1 Crore</option>
-                <option value="25000000">₹2.5 Crore</option>
-                <option value="50000000">₹5 Crore</option>
-                <option value="100000000">₹10 Crore</option>
+                <option value="" className="bg-[#18181F] text-white">Any Max</option>
+                <option value="2500000" className="bg-[#18181F] text-white">₹25 Lakh</option>
+                <option value="5000000" className="bg-[#18181F] text-white">₹50 Lakh</option>
+                <option value="10000000" className="bg-[#18181F] text-white">₹1 Crore</option>
+                <option value="25000000" className="bg-[#18181F] text-white">₹2.5 Crore</option>
+                <option value="50000000" className="bg-[#18181F] text-white">₹5 Crore</option>
+                <option value="100000000" className="bg-[#18181F] text-white">₹10 Crore</option>
               </select>
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function FilterSidebar({
         <button
           type="button"
           onClick={() => toggleSection('bedrooms')}
-          className="w-full flex items-center justify-between text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2"
+          className="w-full flex items-center justify-between text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2"
         >
           <span>Bedrooms (BHK)</span>
           {sectionsOpen.bedrooms ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -308,8 +308,8 @@ export default function FilterSidebar({
                   onClick={() => toggleBed(bed)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
                     active
-                      ? 'bg-emerald text-white border-emerald shadow-sm'
-                      : 'bg-gray-50 text-gray-600 border-gray-200 hover:border-gray-300'
+                      ? 'bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-bold border-transparent shadow-sm'
+                      : 'bg-[#18181F] text-zinc-300 border-white/10 hover:border-[#F5C542]/50'
                   }`}
                 >
                   {bed} BHK
@@ -322,7 +322,7 @@ export default function FilterSidebar({
 
       {/* Area Unit Selector */}
       <div>
-        <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+        <label className="block text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
           Area Measurement Unit
         </label>
         <div className="grid grid-cols-3 gap-1.5 text-center text-xs">
@@ -333,8 +333,8 @@ export default function FilterSidebar({
               onClick={() => setAreaUnit(u)}
               className={`py-1.5 rounded-lg font-medium uppercase border transition-colors ${
                 areaUnit === u
-                  ? 'bg-charcoal text-white border-charcoal font-semibold'
-                  : 'bg-gray-50 text-gray-500 border-gray-200 hover:bg-gray-100'
+                  ? 'bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-bold border-transparent'
+                  : 'bg-[#18181F] text-zinc-400 border-white/10 hover:bg-white/5'
               }`}
             >
               {u === 'gaj' ? 'Gaj' : u === 'sqft' ? 'Sq Ft' : 'Acre'}
@@ -344,26 +344,26 @@ export default function FilterSidebar({
       </div>
 
       {/* Trust & Special Toggles */}
-      <div className="space-y-3 pt-2 border-t border-gray-100">
-        <label className="flex items-center gap-2.5 cursor-pointer text-xs font-medium text-charcoal">
+      <div className="space-y-3 pt-2 border-t border-white/10">
+        <label className="flex items-center gap-2.5 cursor-pointer text-xs font-medium text-zinc-300">
           <input
             type="checkbox"
             checked={verifiedOnly}
             onChange={e => setVerifiedOnly(e.target.checked)}
-            className="w-4 h-4 rounded text-emerald focus:ring-emerald accent-emerald cursor-pointer"
+            className="w-4 h-4 rounded accent-[#F5C542] cursor-pointer"
           />
           <span className="flex items-center gap-1">
-            <ShieldCheck size={14} className="text-emerald" />
+            <ShieldCheck size={14} className="text-[#F5C542]" />
             Verified Listings Only
           </span>
         </label>
 
-        <label className="flex items-center gap-2.5 cursor-pointer text-xs font-medium text-charcoal">
+        <label className="flex items-center gap-2.5 cursor-pointer text-xs font-medium text-zinc-300">
           <input
             type="checkbox"
             checked={cornerPlotOnly}
             onChange={e => setCornerPlotOnly(e.target.checked)}
-            className="w-4 h-4 rounded text-emerald focus:ring-emerald accent-emerald cursor-pointer"
+            className="w-4 h-4 rounded accent-[#F5C542] cursor-pointer"
           />
           <span>Corner Plot / 2-Side Open</span>
         </label>
@@ -374,7 +374,7 @@ export default function FilterSidebar({
         <button
           type="button"
           onClick={handleApply}
-          className="w-full py-3 bg-emerald hover:bg-emerald-dark text-white rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all"
+          className="w-full py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] hover:brightness-105 text-zinc-950 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md transition-all"
         >
           Apply Filters
         </button>
