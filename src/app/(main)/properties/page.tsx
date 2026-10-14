@@ -4,17 +4,21 @@ import { properties } from '@/lib/data/properties'
 import PropertySearchResults from '@/components/search/PropertySearchResults'
 
 export const metadata: Metadata = {
-  title: 'Search Properties in India | Shree Maruti Nandan Properties',
-  description: 'Explore verified residential plots, apartments, villas, farm houses, agricultural land, and commercial properties across North India.',
+  title: 'Property Listings in Bulandshahr & NCR | Shree Maruti Nandan Properties',
+  description:
+    'Browse verified property listings including residential houses, plots, agricultural land, and commercial spaces in Bulandshahr and NCR with Shree Maruti Nandan Properties.',
+  alternates: {
+    canonical: 'https://shreemarutinandanproperties.com/properties',
+  },
 }
 
 export default function PropertiesSearchPage() {
   return (
-    <div className="min-h-screen bg-warm-white pt-20">
-      <Suspense fallback={<div className="max-w-[1440px] mx-auto p-12 text-center text-sm text-gray-500">Loading properties...</div>}>
+    <div className="min-h-screen bg-[#0B0B0E] pt-20">
+      <Suspense fallback={<div className="max-w-[1440px] mx-auto p-12 text-center text-sm text-zinc-400">Loading properties...</div>}>
         <PropertySearchResults
           initialProperties={properties}
-          title="All Properties in India"
+          title="All Property Listings"
           subtitle="Discover verified plots, apartments, independent houses, land parcels, and commercial spaces."
         />
       </Suspense>

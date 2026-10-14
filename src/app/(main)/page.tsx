@@ -13,28 +13,39 @@ import WhyUsSection from '@/components/home/WhyUsSection'
 import ServicesOverview from '@/components/home/ServicesOverview'
 import HowItWorks from '@/components/home/HowItWorks'
 import LocalExpertise from '@/components/home/LocalExpertise'
+import HomeFAQ from '@/components/home/HomeFAQ'
 import ContactCTASection from '@/components/home/ContactCTASection'
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Shree Maruti Nandan Properties | Real Estate Property Dealer in Bulandshahr',
+    absolute: 'Property Dealer in Bulandshahr | Shree Maruti Nandan Properties',
   },
   description:
-    'Explore residential, commercial, agricultural properties, plots, houses, flats and rental properties with Shree Maruti Nandan Properties in Bulandshahr and surrounding areas.',
+    'Looking for a property dealer in Bulandshahr? Contact Shree Maruti Nandan Properties for help finding houses, residential plots and available properties. Enquire today.',
   keywords: [
-    'Shree Maruti Nandan Properties',
-    'Real estate agent in Bulandshahr',
-    'Property dealer in Bulandshahr',
-    'Property consultant in Bulandshahr',
+    'best property dealer in bulandshahr',
+    'property dealer in bulandshahr',
+    'buy new house property dealer in bulandshahr',
+    'properties dealer in bulandshahr',
+    'Shree maruti nandan properties bulandshahr',
+    'Property Dealer Bulandshahr',
+    'Best Property Dealer Bulandshahr',
+    'Property Dealers in Bulandshahr',
+    'Top Property Dealer in Bulandshahr',
+    'Trusted Property Dealer in Bulandshahr',
+    'Real Estate Agent in Bulandshahr',
+    'Property Consultant in Bulandshahr',
     'Plots for sale in Bulandshahr',
+    'Houses for sale in Bulandshahr',
+    'Buy New House in Bulandshahr',
+    'Residential Plot in Bulandshahr',
+    'Commercial Property in Bulandshahr',
     'Bhoor Chauraha Bulandshahr property',
-    'Agricultural land in Bulandshahr',
-    'Commercial property in Bulandshahr',
-    'Property in Noida',
-    'Property in Greater Noida',
-    'Property in Delhi',
-    'Property in Gurugram',
+    'Transport Nagar Bulandshahr',
   ],
+  alternates: {
+    canonical: 'https://shreemarutinandanproperties.com/',
+  },
 }
 
 export default function HomePage() {
@@ -82,7 +93,10 @@ export default function HomePage() {
       {/* 16: Local Expertise */}
       <LocalExpertise />
 
-      {/* 17: Contact CTA */}
+      {/* 17: Local FAQs & Schema Markup */}
+      <HomeFAQ />
+
+      {/* 18: Contact CTA */}
       <ContactCTASection />
     </div>
   )

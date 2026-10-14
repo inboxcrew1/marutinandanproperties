@@ -41,6 +41,9 @@ export async function generateMetadata({ params }: PropertyPageProps): Promise<M
   return {
     title,
     description,
+    alternates: {
+      canonical: `https://shreemarutinandanproperties.com/properties/${property.slug}`,
+    },
     openGraph: {
       title,
       description,

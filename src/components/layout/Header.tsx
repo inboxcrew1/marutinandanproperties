@@ -7,10 +7,11 @@ import { Heart, Menu, X, Phone, MessageSquare } from 'lucide-react'
 
 const navLinks = [
   { label: 'Home', href: '/' },
+  { label: 'Bulandshahr Hub', href: '/property-dealer-in-bulandshahr' },
   { label: 'Buy', href: '/buy' },
-  { label: 'Rent', href: '/rent' },
   { label: 'Plots & Land', href: '/plots-land' },
   { label: 'Commercial', href: '/commercial' },
+  { label: 'Rent', href: '/rent' },
   { label: 'Services', href: '/services' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },

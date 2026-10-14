@@ -26,7 +26,11 @@ export const metadata: Metadata = {
     'Houses for sale in Bulandshahr',
     'Agricultural land Bulandshahr',
     'Shree Maruti Nandan Properties',
+    'best property dealer in bulandshahr',
   ],
+  alternates: {
+    canonical: 'https://shreemarutinandanproperties.com/property-in-bulandshahr',
+  },
 }
 
 export default function BulandshahrPropertyPage() {

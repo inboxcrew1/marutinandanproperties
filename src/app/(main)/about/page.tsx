@@ -18,9 +18,12 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us | Shree Maruti Nandan Properties Bulandshahr',
+  title: 'About Shree Maruti Nandan Properties | Bulandshahr',
   description:
-    'Learn about Shree Maruti Nandan Properties - managed by Manoj Kumar Tyagi and Ashish Chaudhary at Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr. Specializing in residential, commercial and agricultural properties across Bulandshahr, Greater Noida, and Khurja.',
+    'Learn about Shree Maruti Nandan Properties, managed by Manoj Kumar Tyagi and Ashish Chaudhary at Shop No. 375, T.P. Nagar Gol Chakkar, Bulandshahr. Trusted property dealer for houses, plots, and commercial land.',
+  alternates: {
+    canonical: 'https://shreemarutinandanproperties.com/about',
+  },
 }
 
 export default function AboutPage() {

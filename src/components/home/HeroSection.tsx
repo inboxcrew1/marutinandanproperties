@@ -106,16 +106,15 @@ export default function HeroSection() {
           </div>
 
           {/* Section 8: Headline */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight mb-5 drop-shadow-md">
-            <span className="shine-gold-text">Find the Right Property</span> <br className="hidden sm:block" />
-            <span className="text-white">With Confidence.</span>
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight mb-5 drop-shadow-md">
+            <span className="shine-gold-text">Shree Maruti Nandan Properties</span> <br className="hidden sm:block" />
+            <span className="text-white text-2xl sm:text-4xl lg:text-5xl">Your Property Dealer in Bulandshahr</span>
           </h1>
 
           {/* Section 8: Supporting text */}
           <p className="text-zinc-300 text-sm sm:text-base lg:text-lg mb-8 leading-relaxed max-w-2xl font-light">
-            Explore residential, commercial and agricultural properties with{' '}
-            <strong className="font-semibold text-[#F5C542]">Shree Maruti Nandan Properties</strong>,{' '}
-            your local real estate consultant in Bulandshahr.
+            Looking for the <strong className="font-semibold text-[#F5C542]">best property dealer in bulandshahr</strong>? Connect with{' '}
+            <strong className="font-semibold text-white">Shree Maruti Nandan Properties</strong> for verified houses, residential plots, commercial spaces, and agricultural land with transparent legal guidance and genuine local expertise.
           </p>
 
           {/* CTAs */}

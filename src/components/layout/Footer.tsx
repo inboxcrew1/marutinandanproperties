@@ -3,12 +3,12 @@ import { Phone, Mail, MapPin, MessageSquare, ArrowUpRight } from 'lucide-react'
 
 const footerLinks = {
   properties: [
-    { label: 'Properties in Bulandshahr', href: '/property-in-bulandshahr' },
+    { label: 'Property Dealer Bulandshahr', href: '/property-dealer-in-bulandshahr' },
+    { label: 'Houses for Sale in Bulandshahr', href: '/houses-for-sale-in-bulandshahr' },
+    { label: 'Residential Plots in Bulandshahr', href: '/residential-plots-in-bulandshahr' },
+    { label: 'Commercial Property Bulandshahr', href: '/commercial-property-in-bulandshahr' },
     { label: 'Plots & Land for Sale', href: '/plots-land' },
-    { label: 'Flats & Apartments', href: '/buy?type=flat' },
-    { label: 'Houses & Villas', href: '/buy?type=house' },
-    { label: 'Commercial Properties', href: '/commercial' },
-    { label: 'Rental Properties', href: '/rent' },
+    { label: 'All Property Listings', href: '/properties' },
   ],
   services: [
     { label: 'Property Buying Assistance', href: '/services#buying' },
@@ -19,11 +19,11 @@ const footerLinks = {
     { label: 'Personal Property Consultation', href: '/contact' },
   ],
   locations: [
-    { label: 'Bulandshahr (Primary Market)', href: '/property-in-bulandshahr' },
+    { label: 'Bulandshahr (Primary Hub)', href: '/property-dealer-in-bulandshahr' },
     { label: 'Bhoor Chauraha / Transport Nagar', href: '/property-in-bulandshahr' },
-    { label: 'Noida', href: '/property-in/noida' },
+    { label: 'Khurja Corridor', href: '/property-dealer-in-bulandshahr' },
     { label: 'Greater Noida', href: '/property-in/greater-noida' },
-    { label: 'Delhi NCR', href: '/property-in/delhi' },
+    { label: 'Noida', href: '/property-in/noida' },
     { label: 'Gurugram', href: '/property-in/gurugram' },
   ],
   company: [
