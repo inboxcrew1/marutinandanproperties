@@ -113,8 +113,14 @@ export default function HeroSection() {
 
           {/* Section 8: Supporting text */}
           <p className="text-zinc-300 text-sm sm:text-base lg:text-lg mb-8 leading-relaxed max-w-2xl font-light">
-            Looking for the <strong className="font-semibold text-[#F5C542]">best property dealer in bulandshahr</strong>? Connect with{' '}
-            <strong className="font-semibold text-white">Shree Maruti Nandan Properties</strong> for verified houses, residential plots, commercial spaces, and agricultural land with transparent legal guidance and genuine local expertise.
+            Looking for the{' '}
+            <Link
+              href="/property-dealer-in-bulandshahr"
+              className="font-semibold text-[#F5C542] underline decoration-amber-500/40 underline-offset-4 hover:decoration-[#F5C542] hover:text-[#FFF0A8] transition-colors"
+            >
+              best property dealer in bulandshahr
+            </Link>
+            ? Connect with <strong className="font-semibold text-white">Shree Maruti Nandan Properties</strong> for verified houses, residential plots, commercial spaces, and agricultural land with transparent legal guidance and genuine local expertise.
           </p>
 
           {/* CTAs */}

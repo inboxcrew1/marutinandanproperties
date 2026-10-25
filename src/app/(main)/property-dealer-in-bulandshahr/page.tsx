@@ -273,6 +273,145 @@ export default function PropertyDealerInBulandshahrPage() {
           </div>
         </section>
 
+        {/* Primary Neighbourhood Hubs */}
+        <section className="bg-[#101014] rounded-3xl border border-white/10 p-6 sm:p-10">
+          <div className="max-w-3xl mb-8">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#F5C542] bg-[#F5C542]/10 border border-[#F5C542]/20 px-3 py-1 rounded-full">
+              Local Micro-Markets
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mt-3 mb-2">
+              Explore Top Neighbourhoods &amp; Corridors in Bulandshahr
+            </h2>
+            <p className="text-xs sm:text-sm text-zinc-400">
+              Shree Maruti Nandan Properties specializes in verified property transactions across these prominent localities:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+            <Link
+              href="/property-dealer-in-transport-nagar-bulandshahr"
+              className="group p-5 bg-[#131317] hover:bg-[#18181F] rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all shadow-sm"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold text-[#F5C542]">Agency Head Office</span>
+                <ArrowRight size={15} className="text-zinc-500 group-hover:text-[#F5C542] group-hover:translate-x-1 transition-all" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-white group-hover:text-[#F5C542] transition-colors mb-2">
+                Transport Nagar (T.P. Nagar)
+              </h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                Bulandshahr central commercial, logistics, and automobile trading hub on NH-34. Prime commercial shops, showrooms, and warehouse spaces.
+              </p>
+            </Link>
+
+            <Link
+              href="/property-dealer-in-bhoor-bulandshahr"
+              className="group p-5 bg-[#131317] hover:bg-[#18181F] rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all shadow-sm"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold text-[#F5C542]">Prime Junction</span>
+                <ArrowRight size={15} className="text-zinc-500 group-hover:text-[#F5C542] group-hover:translate-x-1 transition-all" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-white group-hover:text-[#F5C542] transition-colors mb-2">
+                Bhoor &amp; Bhoor Chauraha
+              </h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                The city most prominent residential and connectivity node connecting to Delhi Road. Independent kothis, houses, and freehold 100-300 Gaj plots.
+              </p>
+            </Link>
+
+            <Link
+              href="/property-dealer-in-civil-lines-bulandshahr"
+              className="group p-5 bg-[#131317] hover:bg-[#18181F] rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all shadow-sm"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold text-[#F5C542]">Upscale Residential</span>
+                <ArrowRight size={15} className="text-zinc-500 group-hover:text-[#F5C542] group-hover:translate-x-1 transition-all" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-white group-hover:text-[#F5C542] transition-colors mb-2">
+                Civil Lines
+              </h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                Bulandshahr most prestigious colonial enclave near government courts and leading institutions. High-end modern builder floors and houses.
+              </p>
+            </Link>
+
+            <Link
+              href="/property-dealer-in-dm-road-bulandshahr"
+              className="group p-5 bg-[#131317] hover:bg-[#18181F] rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all shadow-sm"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold text-[#F5C542]">Administrative Arterial</span>
+                <ArrowRight size={15} className="text-zinc-500 group-hover:text-[#F5C542] group-hover:translate-x-1 transition-all" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-white group-hover:text-[#F5C542] transition-colors mb-2">
+                DM Road &amp; Yamunapuram
+              </h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                Broad arterial avenue housing hospitals, banks, and planned colonies like Yamunapuram. Excellent for commercial offices and gated homes.
+              </p>
+            </Link>
+
+            <Link
+              href="/property-dealer-in-ganga-nagar-bulandshahr"
+              className="group p-5 bg-[#131317] hover:bg-[#18181F] rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all shadow-sm"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold text-[#F5C542]">Planned Colony</span>
+                <ArrowRight size={15} className="text-zinc-500 group-hover:text-[#F5C542] group-hover:translate-x-1 transition-all" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-white group-hover:text-[#F5C542] transition-colors mb-2">
+                Ganga Nagar &amp; Awas Vikas
+              </h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                Established family communities with serene residential lanes, parks, and schools. Freehold plots and ready-to-move builder floors.
+              </p>
+            </Link>
+
+            <div className="p-5 bg-[#131317] rounded-2xl border border-white/10 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-[#F5C542]">Highway Corridors</span>
+                <h3 className="font-display text-lg font-bold text-white mt-1 mb-2">
+                  NH-34 Bypass &amp; Radial Roads
+                </h3>
+                <p className="text-xs text-zinc-400 leading-relaxed">
+                  Fast-developing commercial corridors along Delhi Road, Khurja Road, Siyana Road, and Shikarpur Road with high appreciation potential.
+                </p>
+              </div>
+              <div className="pt-3">
+                <a
+                  href="tel:+919997837133"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#F5C542] font-semibold hover:underline"
+                >
+                  <Phone size={13} />
+                  <span>Call Us for Highway Land Inquiries</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Micro-market index table */}
+          <div className="p-5 bg-[#131317] rounded-2xl border border-white/5">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-3">
+              Prominent Colonies &amp; Arterial Road Corridors in Bulandshahr
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-[11px] text-zinc-400">
+              <span className="p-2 bg-[#18181F] rounded-lg">Kala Aam Chowk</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Ansari Road Market</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Railway Road Belt</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Delhi Road NH-34</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Khurja Road Corridor</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Shikarpur Road</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Siyana Road Corridor</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Agra Road Junction</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Awas Vikas Colony</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Shivpuri &amp; Laxmi Nagar</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Radha Nagar &amp; Shastri Nagar</span>
+              <span className="p-2 bg-[#18181F] rounded-lg">Devipura &amp; Moti Bagh</span>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Us & Hindi Buyer Guidance */}
         <section className="bg-[#131317] rounded-3xl border border-white/10 p-6 sm:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">

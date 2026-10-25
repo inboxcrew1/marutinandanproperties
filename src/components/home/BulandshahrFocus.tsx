@@ -27,56 +27,76 @@ export default function BulandshahrFocus() {
             </p>
           </div>
 
-          <Link
-            href="/property-in-bulandshahr"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] hover:brightness-110 text-black rounded-xl text-xs sm:text-sm font-bold shadow-md shadow-amber-500/20 transition-all self-start md:self-auto"
-          >
-            <span>Explore Bulandshahr Properties</span>
-            <ArrowRight size={15} />
-          </Link>
+          <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <Link
+              href="/property-dealer-in-bulandshahr"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] hover:brightness-110 text-black rounded-xl text-xs sm:text-sm font-bold shadow-md shadow-amber-500/20 transition-all"
+            >
+              <span>Bulandshahr Dealer Hub</span>
+              <ArrowRight size={15} />
+            </Link>
+            <Link
+              href="/property-in-bulandshahr"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs sm:text-sm font-semibold border border-white/15 transition-colors"
+            >
+              <span>All Listings</span>
+            </Link>
+          </div>
         </div>
 
-        {/* Local Highlights Pills */}
+        {/* Local Highlights Interactive Links */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
-          <div className="flex items-center gap-3 p-3.5 bg-[#131317] rounded-xl border border-white/10 shadow-xs">
-            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0">
+          <Link
+            href="/residential-plots-in-bulandshahr"
+            className="group flex items-center gap-3 p-3.5 bg-[#131317] hover:bg-[#18181F] rounded-xl border border-white/10 hover:border-amber-500/30 transition-all shadow-xs"
+          >
+            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
               <Layers size={18} />
             </div>
             <div>
-              <p className="text-xs font-bold text-zinc-100">Residential Plots</p>
+              <p className="text-xs font-bold text-zinc-100 group-hover:text-[#F5C542] transition-colors">Residential Plots</p>
               <p className="text-[11px] text-zinc-400">100 to 500+ Gaj</p>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex items-center gap-3 p-3.5 bg-[#131317] rounded-xl border border-white/10 shadow-xs">
-            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0">
+          <Link
+            href="/houses-for-sale-in-bulandshahr"
+            className="group flex items-center gap-3 p-3.5 bg-[#131317] hover:bg-[#18181F] rounded-xl border border-white/10 hover:border-amber-500/30 transition-all shadow-xs"
+          >
+            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
               <Building2 size={18} />
             </div>
             <div>
-              <p className="text-xs font-bold text-zinc-100">Houses &amp; Floors</p>
+              <p className="text-xs font-bold text-zinc-100 group-hover:text-[#F5C542] transition-colors">Houses &amp; Floors</p>
               <p className="text-[11px] text-zinc-400">Bhoor &amp; Civil Lines</p>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex items-center gap-3 p-3.5 bg-[#131317] rounded-xl border border-white/10 shadow-xs">
-            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0">
+          <Link
+            href="/commercial-property-in-bulandshahr"
+            className="group flex items-center gap-3 p-3.5 bg-[#131317] hover:bg-[#18181F] rounded-xl border border-white/10 hover:border-amber-500/30 transition-all shadow-xs"
+          >
+            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
               <Store size={18} />
             </div>
             <div>
-              <p className="text-xs font-bold text-zinc-100">Commercial Shops</p>
+              <p className="text-xs font-bold text-zinc-100 group-hover:text-[#F5C542] transition-colors">Commercial Shops</p>
               <p className="text-[11px] text-zinc-400">Transport Nagar Hub</p>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex items-center gap-3 p-3.5 bg-[#131317] rounded-xl border border-white/10 shadow-xs">
-            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0">
+          <Link
+            href="/property-dealer-in-bulandshahr"
+            className="group flex items-center gap-3 p-3.5 bg-[#131317] hover:bg-[#18181F] rounded-xl border border-white/10 hover:border-amber-500/30 transition-all shadow-xs"
+          >
+            <div className="w-9 h-9 rounded-lg bg-[#F5C542]/10 text-[#F5C542] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
               <Trees size={18} />
             </div>
             <div>
-              <p className="text-xs font-bold text-zinc-100">Agricultural Land</p>
+              <p className="text-xs font-bold text-zinc-100 group-hover:text-[#F5C542] transition-colors">Agricultural Land</p>
               <p className="text-[11px] text-zinc-400">Fertile Acre Parcels</p>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Property Grid */}
