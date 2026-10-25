@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import HeroSection from '@/components/home/HeroSection'
 import AgencyIntro from '@/components/home/AgencyIntro'
-import PropertyTypeGrid from '@/components/home/PropertyTypeGrid'
 import FeaturedProperties from '@/components/home/FeaturedProperties'
 import BulandshahrFocus from '@/components/home/BulandshahrFocus'
 import ExploreByLocation from '@/components/home/ExploreByLocation'
@@ -47,40 +46,37 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* 2 & 3: Cinematic Hero & Property Search */}
+      {/* 1: Hero & Property Search */}
       <HeroSection />
 
-      {/* 4: Intro to Shree Maruti Nandan Properties ("Your Local Property Partner") */}
+      {/* 2: About the Agency: Shree Maruti Nandan Properties */}
       <AgencyIntro />
 
-      {/* 5: Property Categories */}
-      <PropertyTypeGrid />
-
-      {/* 6: Featured Properties (3 Genuine Bulandshahr Listings) */}
+      {/* 3: Featured Properties in Bulandshahr (3 Genuine Listings) */}
       <FeaturedProperties />
 
-      {/* 7: Bulandshahr Micro-Markets & Agency Focus */}
+      {/* 4: Bulandshahr Micro-Markets & Agency Focus */}
       <BulandshahrFocus />
 
-      {/* 8: Explore Bulandshahr Micro-Markets */}
+      {/* 5: Explore Bulandshahr Micro-Markets */}
       <ExploreByLocation />
 
-      {/* 13: Why Choose Shree Maruti Nandan Properties */}
+      {/* 6: Why Choose Shree Maruti Nandan Properties */}
       <WhyUsSection />
 
-      {/* 14: Property Buying/Selling Services */}
+      {/* 7: Property Buying/Selling Services */}
       <ServicesOverview />
 
-      {/* 15: How It Works */}
+      {/* 8: How It Works */}
       <HowItWorks />
 
-      {/* 16: Local Expertise */}
+      {/* 9: Local Expertise */}
       <LocalExpertise />
 
-      {/* 17: Local FAQs & Schema Markup */}
+      {/* 10: Local FAQs & Schema Markup */}
       <HomeFAQ />
 
-      {/* 18: Contact CTA */}
+      {/* 11: Contact CTA */}
       <ContactCTASection />
     </div>
   )
