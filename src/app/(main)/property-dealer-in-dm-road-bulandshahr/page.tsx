@@ -104,7 +104,7 @@ export default function DMRoadBulandshahrPage() {
       <section className="relative bg-[#0E0E12] border-b border-white/10 text-white py-14 sm:py-20 mb-12">
         <div className="absolute inset-0 z-0 opacity-20">
           <img
-            src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&q=80"
+            src="/images/bulandshahr-landmarks.jpg"
             alt="DM Road Bulandshahr Properties"
             className="w-full h-full object-cover"
           />

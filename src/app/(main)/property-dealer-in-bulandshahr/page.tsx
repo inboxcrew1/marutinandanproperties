@@ -124,56 +124,103 @@ export default function PropertyDealerInBulandshahrPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-[#0E0E12] border-b border-white/10 text-white py-14 sm:py-20 mb-12">
-        <div className="absolute inset-0 z-0 opacity-20">
+      <section className="relative bg-[#0E0E12] border-b border-white/10 text-white py-12 sm:py-16 lg:py-20 mb-12 overflow-hidden">
+        {/* Background Image: Bulandshahr Landmarks with subtle gradient overlay */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&q=80"
-            alt="Property Dealer in Bulandshahr"
-            className="w-full h-full object-cover"
+            src="/images/bulandshahr-landmarks.jpg"
+            alt="Bulandshahr Landmarks Background"
+            className="w-full h-full object-cover object-center scale-105 filter blur-[1px] opacity-25"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0E] via-[#0B0B0E]/90 to-[#0B0B0E]/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0E] via-transparent to-black/30" />
         </div>
-        <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-xs text-zinc-400 mb-4" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-[#F5C542] transition-colors">Home</Link>
-              <span>/</span>
-              <span className="text-[#F5C542]">Property Dealer in Bulandshahr</span>
-            </nav>
 
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5C542]/15 border border-[#F5C542]/30 text-[#F5C542] text-xs font-bold uppercase tracking-wider mb-4">
-              <MapPin size={13} />
-              <span>Bulandshahr, Uttar Pradesh &bull; T.P. Nagar &amp; Bhoor Chauraha</span>
+        <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Heading & CTAs */}
+            <div className="lg:col-span-7">
+              {/* Breadcrumb */}
+              <nav className="flex items-center gap-2 text-xs text-zinc-400 mb-4" aria-label="Breadcrumb">
+                <Link href="/" className="hover:text-[#F5C542] transition-colors">Home</Link>
+                <span>/</span>
+                <span className="text-[#F5C542]">Property Dealer in Bulandshahr</span>
+              </nav>
+
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5C542]/15 border border-[#F5C542]/30 text-[#F5C542] text-xs font-bold uppercase tracking-wider mb-4">
+                <MapPin size={13} />
+                <span>Bulandshahr, Uttar Pradesh &bull; T.P. Nagar &amp; Bhoor Chauraha</span>
+              </div>
+
+              <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">
+                Best Property Dealer in Bulandshahr <br className="hidden sm:inline" />
+                <span className="text-[#F5C542]">Shree Maruti Nandan Properties</span>
+              </h1>
+
+              <p className="text-zinc-300 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-2xl">
+                Are you searching for a reliable, professional, and trusted property dealer in Bulandshahr? 
+                Shree Maruti Nandan Properties helps families and investors buy new houses, residential plots, commercial shops, and agricultural land with transparent paperwork and zero guesswork.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6">
+                <a
+                  href="tel:+919548974761"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] hover:brightness-105 text-zinc-950 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all"
+                >
+                  <Phone size={15} />
+                  <span>Call Dealer: +91 9548974761</span>
+                </a>
+
+                <a
+                  href="https://wa.me/919548974761?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20looking%20for%20a%20property%20dealer%20in%20Bulandshahr."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366]/15 hover:bg-[#25D366]/25 text-[#25D366] rounded-xl text-xs sm:text-sm font-semibold border border-[#25D366]/30 transition-colors"
+                >
+                  <MessageSquare size={15} />
+                  <span>WhatsApp Enquiry</span>
+                </a>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-4 text-xs text-zinc-400">
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={14} className="text-[#F5C542]" />
+                  <span>100% Registry Verified</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={14} className="text-[#F5C542]" />
+                  <span>T.P. Nagar Office</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={14} className="text-[#F5C542]" />
+                  <span>Direct Owner Deals</span>
+                </div>
+              </div>
             </div>
 
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">
-              Best Property Dealer in Bulandshahr <br className="hidden sm:inline" />
-              <span className="text-[#F5C542]">Shree Maruti Nandan Properties</span>
-            </h1>
-
-            <p className="text-zinc-300 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-2xl">
-              Are you searching for a reliable, professional, and trusted property dealer in Bulandshahr? 
-              Shree Maruti Nandan Properties helps families and investors buy new houses, residential plots, commercial shops, and agricultural land with transparent paperwork and zero guesswork.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-              <a
-                href="tel:+919548974761"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] hover:brightness-105 text-zinc-950 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all"
-              >
-                <Phone size={15} />
-                <span>Call Dealer: +91 9548974761</span>
-              </a>
-
-              <a
-                href="https://wa.me/919548974761?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20looking%20for%20a%20property%20dealer%20in%20Bulandshahr."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366]/15 hover:bg-[#25D366]/25 text-[#25D366] rounded-xl text-xs sm:text-sm font-semibold border border-[#25D366]/30 transition-colors"
-              >
-                <MessageSquare size={15} />
-                <span>WhatsApp Enquiry</span>
-              </a>
+            {/* Right Column: Prominent Bulandshahr Landmarks Showcase Card */}
+            <div className="lg:col-span-5">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#F5C542]/30 via-amber-500/20 to-[#D4AF37]/30 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition duration-500" />
+                <div className="relative rounded-2xl overflow-hidden border border-[#F5C542]/40 bg-[#141419] shadow-2xl">
+                  <div className="relative aspect-[3/2] w-full overflow-hidden bg-black/40">
+                    <img
+                      src="/images/bulandshahr-landmarks.jpg"
+                      alt="Bulandshahr Landmarks - Clock Tower, Chandrakala Devi Temple, Narora Dam, Railway Station, DM Road, Awas Vikas, Ganga Nagar"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                    <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs">
+                      <span className="font-semibold text-white drop-shadow">Bulandshahr Key Hubs &amp; Landmarks</span>
+                      <span className="px-2 py-0.5 rounded-full bg-[#F5C542] text-zinc-950 font-bold text-[10px] uppercase tracking-wider">Local Heritage</span>
+                    </div>
+                  </div>
+                  <div className="p-3 bg-[#121217] border-t border-white/5 text-[11px] text-zinc-400 flex items-center justify-between">
+                    <span>Clock Tower &bull; DM Road &bull; Bhoor &bull; Awas Vikas</span>
+                    <span className="text-[#F5C542] font-semibold">T.P. Nagar Gol Chakkar</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
