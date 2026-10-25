@@ -60,11 +60,36 @@ export default function PropertyOverview({ property }: PropertyOverviewProps) {
           },
         ]
       : []),
-    ...(property.area?.roadWidth
+    ...(property.dimensions
+      ? [
+          {
+            label: 'Plot Dimensions',
+            value: property.dimensions,
+            icon: Maximize2,
+          },
+        ]
+      : property.area?.frontage && property.area?.depth
+      ? [
+          {
+            label: 'Plot Dimensions',
+            value: `${property.area.frontage} m × ${property.area.depth} m`,
+            icon: Maximize2,
+          },
+        ]
+      : []),
+    ...(property.roadDetails
+      ? [
+          {
+            label: 'Road Details',
+            value: property.roadDetails,
+            icon: Building,
+          },
+        ]
+      : property.area?.roadWidth
       ? [
           {
             label: 'Approach Road Width',
-            value: `${property.area.roadWidth} Feet`,
+            value: `${property.area.roadWidth} Metres`,
             icon: Building,
           },
         ]
@@ -99,20 +124,22 @@ export default function PropertyOverview({ property }: PropertyOverviewProps) {
         ]
       : []),
     {
-      label: 'Ownership Type',
-      value: property.ownership ? property.ownership.replace('_', ' ').toUpperCase() : 'Freehold',
+      label: 'Ownership / Legal Status',
+      value: property.ownership
+        ? property.ownership.replace('_', ' ').toUpperCase()
+        : 'Subject to Verification',
       icon: ShieldCheck,
     },
     {
       label: 'Registry Status',
-      value: property.registryStatus
-        ? property.registryStatus.replace('_', ' ').toUpperCase()
-        : 'Registered / Clear Title',
+      value: property.registryStatus === 'clear'
+        ? 'Clear Title'
+        : 'Subject to Verification',
       icon: CheckCircle2,
     },
     {
       label: 'Bank Loan Eligibility',
-      value: property.loanAvailable === false ? 'Not Applicable' : 'Eligible / Apply for Assessment',
+      value: property.loanAvailable ? 'Eligible' : 'Subject to Assessment',
       icon: Banknote,
     },
     ...(property.constructionStatus

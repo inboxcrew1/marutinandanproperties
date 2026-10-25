@@ -21,6 +21,12 @@ interface PropertyPageProps {
   params: Promise<{ slug: string }>
 }
 
+export function generateStaticParams() {
+  return properties.map((property) => ({
+    slug: property.slug,
+  }))
+}
+
 export async function generateMetadata({ params }: PropertyPageProps): Promise<Metadata> {
   const { slug } = await params
   const property = getPropertyBySlug(slug)
@@ -34,9 +40,9 @@ export async function generateMetadata({ params }: PropertyPageProps): Promise<M
 
   const priceStr = formatPrice(property.price.amount)
   const areaStr = formatArea(property.area.value, property.area.unit)
-  const title = `${property.title} | ${priceStr} | Shree Maruti Nandan Properties`
+  const title = `${property.title} | Shree Maruti Nandan Properties`
   const locality = property.location.locality || property.location.city
-  const description = `${property.title} located in ${locality}, ${property.location.city}. Area: ${areaStr}. Price: ${priceStr}. Explore high-resolution photos, verified details, map, and amenities.`
+  const description = `${property.title} located in ${locality}, ${property.location.city}. Area: ${areaStr}. ${priceStr}. Road access: ${property.roadDetails || 'Confirmed road'}. Contact Shree Maruti Nandan Properties for site visits.`
 
   return {
     title,
@@ -178,9 +184,10 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                   {displayPrice}
                 </div>
                 <div className="text-xs text-zinc-400 mt-0.5">
-                  {property.price.isNegotiable ? 'Price Negotiable' : 'Fixed Price'}
-                  {property.area.value && !isRent && (
-                    <span> &bull; ₹{Math.round(property.price.amount / property.area.value).toLocaleString('en-IN')} / {property.area.unit}</span>
+                  {property.price.amount > 0 ? (
+                    <span>{property.price.isNegotiable ? 'Price Negotiable' : 'Fixed Price'}</span>
+                  ) : (
+                    <span>Contact agency desk for price quotation</span>
                   )}
                 </div>
               </div>
@@ -227,8 +234,8 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               {/* What's Nearby */}
               <NearbyPlaces city={property.location.city} locality={locality} />
 
-              {/* EMI Calculator */}
-              {!isRent && (
+              {/* EMI Calculator (Only shown when verified price exists) */}
+              {!isRent && property.price.amount > 0 && (
                 <EMICalculator propertyPrice={property.price.amount} />
               )}
             </div>

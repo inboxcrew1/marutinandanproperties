@@ -127,6 +127,9 @@ export interface Property {
   approachRoad?: boolean;
   registryStatus?: 'clear' | 'pending' | 'under_process';
   loanAvailable?: boolean;
+  dimensions?: string;
+  roadDetails?: string;
+  listingNumber?: string;
 
   // Commercial specific
   commercialType?: string;

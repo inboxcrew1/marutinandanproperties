@@ -4,9 +4,9 @@ import { properties } from '@/lib/data/properties'
 import PropertySearchResults from '@/components/search/PropertySearchResults'
 
 export const metadata: Metadata = {
-  title: 'Property Listings in Bulandshahr & NCR | Shree Maruti Nandan Properties',
+  title: 'Plots & Properties for Sale in Bulandshahr | Shree Maruti Nandan Properties',
   description:
-    'Browse verified property listings including residential houses, plots, agricultural land, and commercial spaces in Bulandshahr and NCR with Shree Maruti Nandan Properties.',
+    'Browse verified residential plots in Transport Nagar and Ganga Nagar, Bulandshahr with confirmed dimensions and road access. Call +91 9548974761.',
   alternates: {
     canonical: 'https://shreemarutinandanproperties.com/properties',
   },
@@ -18,8 +18,8 @@ export default function PropertiesSearchPage() {
       <Suspense fallback={<div className="max-w-[1440px] mx-auto p-12 text-center text-sm text-zinc-400">Loading properties...</div>}>
         <PropertySearchResults
           initialProperties={properties}
-          title="All Property Listings"
-          subtitle="Discover verified plots, apartments, independent houses, land parcels, and commercial spaces."
+          title="Verified Plots & Properties in Bulandshahr"
+          subtitle="Explore genuine residential plot records in Transport Nagar and Ganga Nagar with verified dimensions and road widths."
         />
       </Suspense>
     </div>

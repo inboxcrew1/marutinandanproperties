@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: 'Residential Plots in Bulandshahr | Plots for Sale | Shree Maruti Nandan Properties',
   description:
-    'Find verified residential plots for sale in Bulandshahr with Shree Maruti Nandan Properties. Plots near Bhoor Chauraha, NH-58, Sector 65, and bypass road. Call +91 9997837133.',
+    'Find verified residential plots for sale in Bulandshahr with Shree Maruti Nandan Properties. Plots in Transport Nagar and Ganga Nagar with clear road access. Call +91 9548974761.',
   keywords: [
     'residential plot in bulandshahr',
     'residential plots in bulandshahr',
@@ -104,15 +104,15 @@ export default function ResidentialPlotsInBulandshahrPage() {
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
               <a
-                href="tel:+919997837133"
+                href="tel:+919548974761"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] hover:brightness-105 text-zinc-950 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all"
               >
                 <Phone size={15} />
-                <span>Call Plot Specialist: +91 9997837133</span>
+                <span>Call Plot Specialist: +91 9548974761</span>
               </a>
 
               <a
-                href="https://wa.me/919997837133?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20interested%20in%20residential%20plots%20in%20Bulandshahr."
+                href="https://wa.me/919548974761?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20interested%20in%20residential%20plots%20in%20Bulandshahr."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366]/15 hover:bg-[#25D366]/25 text-[#25D366] rounded-xl text-xs sm:text-sm font-semibold border border-[#25D366]/30 transition-colors"

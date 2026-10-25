@@ -22,8 +22,8 @@ export default function PlotsLandPage() {
       <Suspense fallback={<div className="max-w-[1440px] mx-auto p-12 text-center text-sm text-zinc-400">Loading land &amp; plots...</div>}>
         <PropertySearchResults
           initialProperties={landProperties}
-          title="Plots &amp; Land Parcels"
-          subtitle="Explore residential plots in Bulandshahr and NCR, fertile agricultural acres, and investment land with verified registry."
+          title="Plots &amp; Land in Bulandshahr"
+          subtitle="Explore verified residential plots in Transport Nagar and Ganga Nagar, Bulandshahr with confirmed dimensions and road access."
           defaultCategory="land"
         />
       </Suspense>

@@ -21,7 +21,10 @@ export function cn(...inputs: ClassValue[]) {
  * formatPrice(750000)           // "₹7.5 Lakh"
  * formatPrice(18500000, false)  // "₹1,85,00,000"
  */
-export function formatPrice(amount: number, compact = true): string {
+export function formatPrice(amount?: number | null, compact = true): string {
+  if (!amount || amount <= 0) {
+    return 'Price on Request';
+  }
   if (compact) {
     if (amount >= 10_000_000) {
       const crore = amount / 10_000_000;

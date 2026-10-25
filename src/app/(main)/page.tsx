@@ -4,10 +4,6 @@ import AgencyIntro from '@/components/home/AgencyIntro'
 import PropertyTypeGrid from '@/components/home/PropertyTypeGrid'
 import FeaturedProperties from '@/components/home/FeaturedProperties'
 import BulandshahrFocus from '@/components/home/BulandshahrFocus'
-import ResidentialSection from '@/components/home/ResidentialSection'
-import PlotsSection from '@/components/home/PlotsSection'
-import CommercialSection from '@/components/home/CommercialSection'
-import RentalSection from '@/components/home/RentalSection'
 import ExploreByLocation from '@/components/home/ExploreByLocation'
 import WhyUsSection from '@/components/home/WhyUsSection'
 import ServicesOverview from '@/components/home/ServicesOverview'
@@ -60,25 +56,13 @@ export default function HomePage() {
       {/* 5: Property Categories */}
       <PropertyTypeGrid />
 
-      {/* 6: Featured Properties */}
+      {/* 6: Featured Properties (3 Genuine Bulandshahr Listings) */}
       <FeaturedProperties />
 
-      {/* 7: Properties in Bulandshahr */}
+      {/* 7: Bulandshahr Micro-Markets & Agency Focus */}
       <BulandshahrFocus />
 
-      {/* 8: Residential Properties */}
-      <ResidentialSection />
-
-      {/* 9: Plots & Land */}
-      <PlotsSection />
-
-      {/* 10: Commercial Properties */}
-      <CommercialSection />
-
-      {/* 11: Rental Properties */}
-      <RentalSection />
-
-      {/* 12: Explore Locations */}
+      {/* 8: Explore Bulandshahr Micro-Markets */}
       <ExploreByLocation />
 
       {/* 13: Why Choose Shree Maruti Nandan Properties */}

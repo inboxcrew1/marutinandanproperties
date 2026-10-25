@@ -20,8 +20,8 @@ export default function BuyPage() {
       <Suspense fallback={<div className="max-w-[1440px] mx-auto p-12 text-center text-sm text-zinc-400">Loading properties for sale...</div>}>
         <PropertySearchResults
           initialProperties={saleProperties}
-          title="Properties for Sale"
-          subtitle="Discover verified freehold plots, luxury apartments, and independent homes with clear legal titles."
+          title="Plots &amp; Properties for Sale"
+          subtitle="Discover verified freehold residential plots in Transport Nagar and Ganga Nagar, Bulandshahr with confirmed dimensions and road access."
           defaultListingType="sale"
         />
       </Suspense>

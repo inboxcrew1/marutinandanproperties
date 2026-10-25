@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { properties } from '@/lib/data/properties'
 import PropertyCard from '@/components/property/PropertyCard'
+import BulandshahrHubListings from '@/components/bulandshahr/BulandshahrHubListings'
 import {
   MapPin,
   ShieldCheck,
@@ -18,24 +19,25 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Best Property Dealer in Bulandshahr | Shree Maruti Nandan Properties',
+  title: 'Plots for Sale in Bulandshahr | Shree Maruti Nandan Properties',
   description:
-    'Looking for the best property dealer in Bulandshahr? Shree Maruti Nandan Properties offers trusted guidance for buying new houses, residential plots, shops, and land. Call +91 9548974761.',
+    'Looking for plots for sale in Bulandshahr? Explore 7 genuine residential plots in Transport Nagar and Ganga Nagar with Shree Maruti Nandan Properties. Call +91 9548974761.',
   keywords: [
-    'best property dealer in bulandshahr',
-    'property dealer in bulandshahr',
-    'buy new house property dealer in bulandshahr',
-    'properties dealer in bulandshahr',
-    'Shree maruti nandan properties bulandshahr',
-    'Property Dealer Bulandshahr',
-    'Best Property Dealer Bulandshahr',
-    'Top Property Dealer in Bulandshahr',
-    'Trusted Property Dealer in Bulandshahr',
-    'Real Estate Agent in Bulandshahr',
-    'Real Estate Agency in Bulandshahr',
-    'Property Consultant in Bulandshahr',
-    'Property Dealer Near Me',
-    'Bulandshahr mein property dealer',
+    'Plots for sale in Bulandshahr',
+    'Residential plots in Bulandshahr',
+    'Property dealer in Bulandshahr',
+    'Best property dealer in Bulandshahr',
+    'Transport Nagar property dealer',
+    'Plots for sale in Transport Nagar, Bulandshahr',
+    'Ganga Nagar property dealer',
+    'Plots for sale in Ganga Nagar, Bulandshahr',
+    '375 square metre plot in Transport Nagar',
+    '72 square metre plot in Bulandshahr',
+    '54 square metre plot in Transport Nagar',
+    '200 square metre plot in Ganga Nagar',
+    'Shree Maruti Nandan Properties Bulandshahr',
+    'Property in Bulandshahr',
+    'Bulandshahr mein plot',
   ],
   alternates: {
     canonical: 'https://shreemarutinandanproperties.com/property-dealer-in-bulandshahr',
@@ -266,31 +268,9 @@ export default function PropertyDealerInBulandshahrPage() {
           </div>
         </section>
 
-        {/* Current Verified Listings in Bulandshahr */}
-        <section>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
-            <div>
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-white">
-                Available Properties in Bulandshahr
-              </h2>
-              <p className="text-xs sm:text-sm text-zinc-400 mt-1">
-                Verified listings currently available for inspection and direct purchase.
-              </p>
-            </div>
-            <Link
-              href="/properties?city=Bulandshahr"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:border-[#F5C542] text-xs font-semibold text-zinc-200 hover:text-[#F5C542] transition-colors"
-            >
-              <span>View All Bulandshahr Listings</span>
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {bulandshahrListings.slice(0, 6).map((property) => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
-          </div>
+        {/* Current Verified Plot Listings in Bulandshahr Hub (7 Genuine Plots) */}
+        <section id="available-plots">
+          <BulandshahrHubListings properties={properties} />
         </section>
 
         {/* Primary Neighbourhood Hubs */}

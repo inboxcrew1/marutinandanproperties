@@ -99,12 +99,7 @@ export default function BulandshahrFocus() {
           </Link>
         </div>
 
-        {/* Property Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {bulandshahrProperties.map((property) => (
-            <PropertyCard key={property.id} property={property} />
-          ))}
-        </div>
+
 
         {/* Bottom Callout */}
         <div className="mt-12 p-6 sm:p-8 bg-[#0B0B0E] text-white rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-amber-500/25">
@@ -122,10 +117,10 @@ export default function BulandshahrFocus() {
 
           <div className="flex items-center gap-3 flex-shrink-0">
             <a
-              href="tel:+919997837133"
+              href="tel:+919548974761"
               className="px-5 py-3 bg-gradient-to-r from-[#FFF6C7] via-[#F5C542] to-[#D4AF37] hover:brightness-110 text-black rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md shadow-amber-500/20"
             >
-              Call +91 9997837133
+              Call +91 9548974761
             </a>
             <Link
               href="/contact"
