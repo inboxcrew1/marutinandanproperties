@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: 'Best Property Dealer in Bulandshahr | Shree Maruti Nandan Properties',
   description:
-    'Looking for the best property dealer in Bulandshahr? Shree Maruti Nandan Properties offers trusted guidance for buying new houses, residential plots, shops, and land. Call +91 9997837133.',
+    'Looking for the best property dealer in Bulandshahr? Shree Maruti Nandan Properties offers trusted guidance for buying new houses, residential plots, shops, and land. Call +91 9548974761.',
   keywords: [
     'best property dealer in bulandshahr',
     'property dealer in bulandshahr',
@@ -158,15 +158,15 @@ export default function PropertyDealerInBulandshahrPage() {
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
               <a
-                href="tel:+919997837133"
+                href="tel:+919548974761"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] hover:brightness-105 text-zinc-950 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all"
               >
                 <Phone size={15} />
-                <span>Call Dealer: +91 9997837133</span>
+                <span>Call Dealer: +91 9548974761</span>
               </a>
 
               <a
-                href="https://wa.me/919997837133?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20looking%20for%20a%20property%20dealer%20in%20Bulandshahr."
+                href="https://wa.me/919548974761?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20looking%20for%20a%20property%20dealer%20in%20Bulandshahr."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366]/15 hover:bg-[#25D366]/25 text-[#25D366] rounded-xl text-xs sm:text-sm font-semibold border border-[#25D366]/30 transition-colors"
@@ -380,7 +380,7 @@ export default function PropertyDealerInBulandshahrPage() {
               </div>
               <div className="pt-3">
                 <a
-                  href="tel:+919997837133"
+                  href="tel:+919548974761"
                   className="inline-flex items-center gap-1.5 text-xs text-[#F5C542] font-semibold hover:underline"
                 >
                   <Phone size={13} />
@@ -409,6 +409,29 @@ export default function PropertyDealerInBulandshahrPage() {
               <span className="p-2 bg-[#18181F] rounded-lg">Radha Nagar &amp; Shastri Nagar</span>
               <span className="p-2 bg-[#18181F] rounded-lg">Devipura &amp; Moti Bagh</span>
             </div>
+          </div>
+        </section>
+
+        {/* Bulandshahr Landmark Showcase */}
+        <section className="bg-[#101014] rounded-3xl border border-white/10 p-6 sm:p-10">
+          <div className="max-w-3xl mb-6">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#F5C542] bg-[#F5C542]/10 border border-[#F5C542]/20 px-3 py-1 rounded-full">
+              Heritage &amp; Infrastructure
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mt-3 mb-2">
+              Bulandshahr: History, Culture &amp; Growth
+            </h2>
+            <p className="text-xs sm:text-sm text-zinc-400">
+              From the historic Clock Tower and Chandrakala Devi Temple to modern corridors along DM Road, Delhi Road, and Awas Vikas Colony, Bulandshahr is evolving rapidly with prime real estate potential.
+            </p>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <img
+              src="/images/bulandshahr-landmarks.jpg"
+              alt="Bulandshahr Landmarks - Clock Tower, DM Road, Awas Vikas, Chandrakala Devi Temple, Railway Station"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
@@ -460,7 +483,7 @@ export default function PropertyDealerInBulandshahrPage() {
 
               <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-white/10">
                 <a
-                  href="tel:+919997837133"
+                  href="tel:+919548974761"
                   className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#F5C542] hover:brightness-110 text-zinc-950 font-bold rounded-xl text-xs transition-all text-center"
                 >
                   <Phone size={14} />

@@ -69,12 +69,12 @@ export default function Header() {
             <div className="flex items-center gap-2 sm:gap-3">
               {/* Call direct agency number */}
               <a
-                href="tel:+919997837133"
+                href="tel:+919548974761"
                 className="hidden md:inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold border border-amber-500/30 bg-[#16161B] text-[#F5C542] hover:border-[#F5C542] hover:bg-amber-500/10 transition-all shadow-xs"
                 title="Call Shree Maruti Nandan Properties"
               >
                 <Phone size={14} className="text-[#F5C542]" />
-                <span>+91 9997837133</span>
+                <span>+91 9548974761</span>
               </a>
 
               {/* Saved */}
@@ -150,20 +150,20 @@ export default function Header() {
             {/* Direct Call / Contact Bar */}
             <div className="p-4 bg-[#131317] border-b border-white/10 space-y-2">
               <a
-                href="tel:+919997837133"
+                href="tel:+919548974761"
                 className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#18181D] border border-amber-500/30 rounded-xl text-xs font-bold text-[#F5C542] shadow-xs hover:border-[#F5C542]"
               >
                 <Phone size={14} className="text-[#F5C542]" />
-                <span>Call +91 9997837133</span>
+                <span>Call +91 9548974761</span>
               </a>
               <a
-                href="https://wa.me/919997837133?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20would%20like%20to%20enquire%20about%20properties."
+                href="https://wa.me/919548974761?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20would%20like%20to%20enquire%20about%20properties."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-2.5 bg-amber-500/15 text-[#F5C542] border border-amber-500/30 rounded-xl text-xs font-bold hover:bg-amber-500/25 transition-colors"
               >
                 <MessageSquare size={14} />
-                <span>Chat on WhatsApp</span>
+                <span>Chat on WhatsApp (+91 9548974761)</span>
               </a>
             </div>
 

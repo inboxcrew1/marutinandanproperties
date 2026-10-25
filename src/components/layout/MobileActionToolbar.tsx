@@ -43,7 +43,7 @@ export default function MobileActionToolbar() {
         <div className="max-w-md mx-auto grid grid-cols-4 gap-1.5 items-center">
           {/* 1. Direct Call */}
           <a
-            href="tel:+919997837133"
+            href="tel:+919548974761"
             className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-gradient-to-r from-[#FFF0A8] via-[#F5C542] to-[#D4AF37] text-zinc-950 font-extrabold text-[11px] shadow-sm active:scale-95 transition-transform min-h-[48px]"
             aria-label="Call Shree Maruti Nandan Properties"
           >
@@ -53,7 +53,7 @@ export default function MobileActionToolbar() {
 
           {/* 2. Direct WhatsApp */}
           <a
-            href="https://wa.me/919997837133?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20interested%20in%20property%20in%20Bulandshahr."
+            href="https://wa.me/919548974761?text=Hello%20Shree%20Maruti%20Nandan%20Properties,%20I%20am%20interested%20in%20property%20in%20Bulandshahr."
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-[#25D366] text-white font-bold text-[11px] shadow-sm active:scale-95 transition-transform min-h-[48px]"
