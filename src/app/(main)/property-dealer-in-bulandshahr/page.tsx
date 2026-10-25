@@ -124,21 +124,21 @@ export default function PropertyDealerInBulandshahrPage() {
       />
 
       {/* Hero Section - Full Space Bulandshahr Image */}
-      <section className="relative min-h-[520px] sm:min-h-[580px] lg:min-h-[620px] flex items-center bg-[#0B0B0E] border-b border-white/10 text-white py-16 sm:py-20 lg:py-24 mb-12 overflow-hidden">
-        {/* Full Space Bulandshahr Landmarks Image */}
+      <section className="relative min-h-[500px] sm:min-h-[540px] lg:min-h-[580px] flex items-center bg-[#0B0B0E] border-b border-white/10 text-white py-14 sm:py-20 mb-12 overflow-hidden">
+        {/* Full Space Bulandshahr Landmarks Image with Increased Transparency */}
         <div className="absolute inset-0 z-0">
           <img
             src="/images/bulandshahr-landmarks.jpg"
             alt="Bulandshahr Landmarks - Clock Tower, DM Road, Bhoor, Devi Temple, Railway Station"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center opacity-75"
           />
-          {/* Gradients ensuring high text readability while keeping landmarks beautifully visible across full space */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0E]/95 via-[#0B0B0E]/80 to-[#0B0B0E]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0E] via-transparent to-[#0B0B0E]/50" />
+          {/* Soft atmospheric gradient without extra box */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0E]/90 via-[#0B0B0E]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0E] via-transparent to-black/40" />
         </div>
 
         <div className="relative z-10 max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl backdrop-blur-sm bg-black/40 p-6 sm:p-8 lg:p-10 rounded-3xl border border-white/15 shadow-2xl">
+          <div className="max-w-3xl">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-xs text-zinc-300 mb-4" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-[#F5C542] transition-colors">Home</Link>
@@ -146,7 +146,7 @@ export default function PropertyDealerInBulandshahrPage() {
               <span className="text-[#F5C542]">Property Dealer in Bulandshahr</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5C542]/20 border border-[#F5C542]/40 text-[#F5C542] text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5C542]/20 border border-[#F5C542]/40 text-[#F5C542] text-xs font-bold uppercase tracking-wider mb-4 shadow-sm backdrop-blur-[2px]">
               <MapPin size={13} />
               <span>Bulandshahr, Uttar Pradesh &bull; T.P. Nagar &amp; Bhoor Chauraha</span>
             </div>
@@ -181,7 +181,7 @@ export default function PropertyDealerInBulandshahrPage() {
               </a>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs text-zinc-300 font-medium">
+            <div className="flex flex-wrap items-center gap-4 text-xs text-zinc-300 font-medium drop-shadow-sm">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 size={14} className="text-[#F5C542]" />
                 <span>100% Registry Verified</span>
